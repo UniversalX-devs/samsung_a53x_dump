@@ -1,0 +1,19 @@
+## a53xnaxx-user 13 TP1A.220624.014 A536BXXU4BVL2 release-keys
+- Manufacturer: samsung
+- Platform: universal8825
+- Codename: a53x
+- Brand: samsung
+- Flavor: a53xnaxx-user
+- Release Version: 13
+- Kernel Version: 5.10.66
+- Id: TP1A.220624.014
+- Incremental: A536BXXU4BVL2
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: false
+- Locale: en-GB
+- Screen Density: undefined
+- Fingerprint: samsung/a53xnaxx/a53x:12/SP1A.210812.016/A536BXXU4BVL2:user/release-keys
+- OTA version: 
+- Branch: a53xnaxx-user-13-TP1A.220624.014-A536BXXU4BVL2-release-keys
+- Repo: samsung_a53x_dump
