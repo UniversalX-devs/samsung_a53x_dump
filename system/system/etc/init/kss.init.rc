@@ -1,0 +1,22 @@
+on post-fs-data
+    mkdir /data/misc/kpm
+    copy /data/misc/tz_ccm/kpm.xml /data/misc/kpm/kpm.xml 
+    rm  /data/misc/tz_ccm/kpm.xml
+
+    chown everybody everybody /data/misc/kpm
+    chmod 770 /data/misc/kpm
+
+    chown everybody everybody /data/misc/kpm/kpm.xml
+    chmod 770 /data/misc/kpm/kpm.xml
+
+
+    mkdir /efs/sec_efs/kpm
+
+    chown everybody everybody /efs/sec_efs/kpm
+    chmod 770 /efs/sec_efs/kpm
+
+    chown everybody everybody /efs/sec_efs/kpm/registration
+    chmod 770 /efs/sec_efs/kpm/registration
+
+    chown everybody everybody /efs/sec_efs/kpm/mdRegistered
+    chmod 770 /efs/sec_efs/kpm/mdRegistered

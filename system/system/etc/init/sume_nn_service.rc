@@ -1,0 +1,3 @@
+on ealy-init
+    chown root vendor_secdir /system/etc/sume
+    chmod 0750 /system/etc/sume

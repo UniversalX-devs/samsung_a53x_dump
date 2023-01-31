@@ -1,0 +1,11 @@
+# sem_daemon
+service sem_daemon /system/bin/sem_daemon
+    class core
+    user system
+    group system nfc
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start sem_daemon
+

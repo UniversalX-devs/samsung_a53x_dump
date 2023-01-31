@@ -1,0 +1,32 @@
+service zygote /system/bin/app_process64 -Xzygote /system/bin --zygote --start-system-server --socket-name=zygote
+    class main
+    priority -20
+    user root
+    group root readproc reserved_disk
+    socket zygote stream 660 root system
+    socket usap_pool_primary stream 660 root system
+    onrestart exec_background - system system -- /system/bin/vdc volume abort_fuse
+    onrestart write /sys/power/state on
+    onrestart restart audioserver
+    onrestart restart cameraserver
+    onrestart restart media
+    onrestart restart media.tuner
+    onrestart restart netd
+    onrestart restart wificond
+    onrestart restart perfmond
+    # Move zygote64 into the top-app stune group.
+    # https://android.googlesource.com/platform/system/core/+/e2318a2fcede97f826e5e1f68d6e9a5726b4fc2f
+    task_profiles ProcessCapacityHigh SystemServiceCapacityHigh MaxPerformance
+    critical window=${zygote.critical_window.minute:-off} target=zygote-fatal
+
+service zygote_secondary /system/bin/app_process32 -Xzygote /system/bin --zygote --socket-name=zygote_secondary --enable-lazy-preload
+    class main
+    priority -20
+    user root
+    group root readproc reserved_disk
+    socket zygote_secondary stream 660 root system
+    socket usap_pool_secondary stream 660 root system
+    onrestart restart zygote
+    # Move zygote64 into the top-app stune group.
+    # https://android.googlesource.com/platform/system/core/+/e2318a2fcede97f826e5e1f68d6e9a5726b4fc2f
+    task_profiles ProcessCapacityHigh SystemServiceCapacityHigh MaxPerformance

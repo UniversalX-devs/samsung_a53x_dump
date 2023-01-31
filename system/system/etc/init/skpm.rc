@@ -1,0 +1,29 @@
+on post-fs-data
+    chmod 0644 /efs/sec_efs/skpm_sk.dat
+    chmod 0644 /efs/sec_efs/skpm_supported_list
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Bound_FP_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Bound_FP_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Roaming_FP_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Bound_FACE_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Bound_FACE_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Roaming_FACE_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Bound_IRIS_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Bound_IRIS_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_FIDO_Roaming_IRIS_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_TA_Downloader_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm_OTA_WBv2_IFAA_RSA_2048
+
+    mkdir /efs/sec_efs/skpm 0775 system system
+    chmod 0644 /efs/sec_efs/skpm/skpm_sk.dat
+    chmod 0644 /efs/sec_efs/skpm/skpm_supported_list
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Bound_FP_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Bound_FP_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Roaming_FP_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Bound_FACE_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Bound_FACE_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Roaming_FACE_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Bound_IRIS_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Bound_IRIS_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_FIDO_Roaming_IRIS_ECC_P256
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_TA_Downloader_RSA_2048
+    chmod 0644 /efs/sec_efs/skpm/skpm_OTA_WBv2_IFAA_RSA_2048

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VERSION value="20220831"/>
+<LIST>
+    <TARGET value="22">
+        <PEMLIST name="android.permission.PROCESS_OUTGOING_CALLS"/>
+        <PEMLIST name="android.permission.BIND_CALL_REDIRECTION_SERVICE"/>
+        <PEMLIST name="android.permission.BIND_INCALL_SERVICE"/>
+        <PEMLIST name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"/>
+        <PEMLIST name="android.permission.ANSWER_PHONE_CALLS"/>
+        <PEMLIST name="android.permission.CALL_PHONE"/>
+    </TARGET>
+    <TARGETZIP value="100">
+        <PEMLIST name="android.permission.PROCESS_OUTGOING_CALLS"/>
+        <PEMLIST name="android.permission.BIND_CALL_REDIRECTION_SERVICE"/>
+        <PEMLIST name="android.permission.BIND_INCALL_SERVICE"/>
+        <PEMLIST name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"/>
+        <PEMLIST name="android.permission.ANSWER_PHONE_CALLS"/>
+        <PEMLIST name="android.permission.CALL_PHONE"/>
+    </TARGETZIP>
+</LIST>

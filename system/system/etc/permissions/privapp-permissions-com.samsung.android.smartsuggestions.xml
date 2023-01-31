@@ -1,0 +1,63 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.smartsuggestions">
+        <permission name="android.permission.BIND_TEXTCLASSIFIER_SERVICE" />
+        <permission name="android.permission.BIND_CONTENT_CAPTURE_SERVICE" />
+        <permission name="android.permission.BIND_AUGMENTED_AUTOFILL_SERVICE" />
+        <permission name="android.permission.BROADCAST_SMS" />
+        <permission name="android.permission.READ_SMS" />
+        <permission name="android.permission.RECEIVE_SMS" />
+        <permission name="com.samsung.android.scs.ai.text.permission.TEXT_PROVIDER" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.SET_PROCESS_LIMIT"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="com.sec.android.diagmonagent.permission.DIAGMON"/>
+        <permission name="com.sec.android.diagmonagent.permission.PROVIDER"/>
+        <permission name="android.permission.LOG_COMPAT_CHANGE"/>
+        <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
+		<!-- Added missing permission from control, Donation,extServices AndroidManifest.xml, -->
+		<permission name="android.permission.INTERNET" />
+        <permission name="com.samsung.android.rubin.context.permission.READ_CONTEXT_MANAGER"/>
+        <permission name="com.sec.android.daemonapp.ap.accuweather.ACCUWEATHER_DAEMON_ACCESS_PROVIDER"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.READ_CLIPBOARD_IN_BACKGROUND"/>
+        <permission name="android.permission.GET_INTENT_SENDER_INTENT"/>
+        <permission name="android.permission.MANAGE_NOTIFICATIONS"/>
+        <permission name="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER"/>
+        <permission name="com.samsung.android.providers.media.READ"/>
+        <permission name="com.samsung.cmh.data.READ"/>
+        <permission name="com.samsung.android.email.permission.ACCESS_PROVIDER"/>
+        <permission name="com.samsung.android.app.tips.permission.USE_INTENT_SERVICE"/>	
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+		<permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.CALL_PHONE"/>
+		<!-- Added missing permission from extSerice/AndroidManifest.xml -->
+		<!-- TO DO :- check whther these two required or not -->
+		<permission name="com.samsung.android.permission.SMART_SUGGESTIONS_OTP"/>
+        <permission name="android.permission.SEND_SMS"/>
+		<!-- Added missing permission from Serice/AndroidManifest.xml -->
+		<!-- TO DO :- check whther this is really required or not -->
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<!-- Added missing permission to resolve CTS issue -->
+        <permission name="com.samsung.android.permission.SEM_MEDIA_CONTENTS"/>
+        <permission name="com.samsung.android.security.permission.SAMSUNG_KEYSTORE_PERMISSION"/>
+        <permission name="android.permission.RETRIEVE_WINDOW_CONTENT"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+		<permission name="android.permission.BLUETOOTH_CONNECT"/>
+	<!-- Read Own Phone Number to exclude showing Call Action Suggestion -->
+		<permission name="android.permission.READ_PHONE_NUMBERS"/>
+	<!-- MusicPlayBackTrigger : to read musicplayback packagename by using clientuid -->
+		<permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+		<permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+	    <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.ACCESS_SHORTCUTS"/>
+    </privapp-permissions>
+</permissions>

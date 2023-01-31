@@ -1,0 +1,48 @@
+on early-init
+    setprop init.svc.dumpstate stopped
+    setprop init.svc.dumpstatez stopped
+    setprop init.svc.bugreportd stopped
+    setprop init.svc.bugreportm stopped
+
+on property:init.svc.dumpstate=running
+    setprop dumpstate.is_running 1
+on property:init.svc.dumpstatez=running
+    setprop dumpstate.is_running 1
+on property:init.svc.bugreportd=running
+    setprop dumpstate.is_running 1
+on property:init.svc.bugreportm=running
+    setprop dumpstate.is_running 1
+on property:init.svc.dumpstate=stopped && property:init.svc.dumpstatez=stopped \
+    && property:init.svc.bugreportd=stopped && property:init.svc.bugreportm=stopped
+    setprop dumpstate.is_running 0
+
+on boot
+    # Allow bugreports access to eMMC 5.0 stats
+    chown root mount /sys/kernel/debug/mmc0/mmc0:0001/ext_csd
+    chmod 0440 /sys/kernel/debug/mmc0/mmc0:0001/ext_csd
+
+service dumpstate /system/bin/dumpstate -s
+    class main
+    socket dumpstate stream 0660 shell log
+    disabled
+    oneshot
+
+# dumpstatez generates a zipped bugreport but also uses a socket to print the file location once
+# it is finished.
+service dumpstatez /system/bin/dumpstate -S -d
+    socket dumpstate stream 0660 shell log
+    class main
+    disabled
+    oneshot
+
+# bugreportd starts dumpstate binder service and makes it wait for a listener to connect.
+service bugreportd /system/bin/dumpstate -w
+    class main
+    disabled
+    oneshot
+
+# bugreportm generates zipped bugreport through bugreport.mode property
+service bugreportm /system/bin/dumpstate -m -d -z
+    class main
+    disabled
+    oneshot

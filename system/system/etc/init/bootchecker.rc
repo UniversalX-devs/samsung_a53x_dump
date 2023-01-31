@@ -1,0 +1,29 @@
+# bootchecker rc file, 
+on early-init
+    readahead /system/framework --fully
+    readahead /system/etc/sysconfig --fully
+    readahead /vendor/etc/sysconfig --fully
+    readahead /product/etc/sysconfig --fully
+    readahead /system/etc/permissions --fully
+    readahead /vendor/etc/permissions --fully
+    readahead /product/etc/permissions --fully
+
+service bootchecker /system/bin/bootchecker
+    class late_start
+    user system
+    group system log
+    oneshot
+
+on property:init.svc.zygote=restarting
+    write /dev/freezer/olaf/freezer.state THAWED
+    write /dev/freezer/frozen/freezer.state THAWED
+    write /dev/freezer/abnormal/freezer.state THAWED
+    restart bootchecker
+
+service bootchecker-bootc /system/bin/bootchecker --writebootc
+    user system
+    group system log
+    oneshot
+
+on property:dev.bootcomplete=1
+    start bootchecker-bootc

@@ -1,0 +1,10 @@
+<permissions>
+    <privapp-permissions package="com.android.vpndialogs">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.CONTROL_VPN"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <!-- SECURE_WIFI { -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- SECURE_WIFI } -->
+    </privapp-permissions>
+</permissions>

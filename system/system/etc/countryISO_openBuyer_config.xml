@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<CountryISOMatchingOpenBuyer>
+	<!-- EUR Customer List for TSS 2.0-->
+	<!-- https://mobilerndhub.sec.samsung.net/wiki/display/SDMS/EUR+Customer+List+for+TSS+2.0 -->
+	<EUX>
+		<AT>ATO</AT>
+		<BG>BGL</BG>
+		<CZ>XEZ</CZ>
+		<DE>DBT</DE>
+		<ES>PHE</ES>
+		<FR>XEF</FR>
+		<GB>BTU</GB>
+		<GR>EUR</GR>
+		<HU>XEH</HU>
+		<IT>ITV</IT>
+		<LU>LUX</LU>
+		<LV>SEB</LV>
+		<NL>PHN</NL>
+		<PL>XEO</PL>
+		<PT>TPH</PT>
+		<RO>ROM</RO>
+		<SE>NEE</SE>
+		<SI>SIO</SI>
+		<SK>ORX</SK>
+	</EUX>
+	
+	<EUY>
+		<RS>SEE</RS>
+		<CH>AUT</CH>
+	</EUY>
+
+</CountryISOMatchingOpenBuyer>    

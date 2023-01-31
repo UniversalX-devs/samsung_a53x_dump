@@ -1,0 +1,10 @@
+{
+  "version": "4.1",
+  "framework": "tflite",
+  "precision": "float16",
+  "runtime": "cpu",
+  "org_model_name": "efficientnet_b1_lightaug_changeds_ex08_2_13.tflite",
+  "model_path": [
+    "/system/etc/reflectionremoval/db/reflection_evalutator.tflite"
+  ]
+}

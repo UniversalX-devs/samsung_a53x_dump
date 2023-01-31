@@ -1,0 +1,32 @@
+#
+# Copyright (C) 2021 Samsung Electronics
+#
+# This software is the confidential and proprietary information
+# of Samsung Electronics, Inc. ("Confidential Information").  You
+# shall not disclose such Confidential Information and shall use
+# it only in accordance with the terms of the license agreement
+# you entered into with Samsung Electronics.
+
+# If the property is false or it is not set then speg_helper will be launched.
+on property:com.samsung.speg.disable=false
+    start speg_helper
+on property:com.samsung.speg.disable=
+    enable speg_helper
+
+on property:com.samsung.speg.disable=true
+    stop speg_helper
+
+on post-fs-data
+    # Disable SPEG if the art profile version does not match the SPEG one.
+    exec_background u:r:su:s0 system system -- /system/bin/sh -c "profman \
+        --generate-test-profile=/data/misc/speg/test.prof --generate-test-profile-num-dex=0 && \
+        test `head -c 8 /data/misc/speg/test.prof | tr -d '\0'` == `/apex/com.samsung.android.spqr/bin/spqr --profile-version || \
+        echo bad` || setprop com.samsung.speg.disable true; rm /data/misc/speg/test.prof"
+
+service speg_helper /system/bin/speg_helper
+    # Disable the service by default to control its launching via properties.
+    disabled
+    class main
+    user system
+    group system
+    capabilities SETUID SETGID CHOWN FOWNER

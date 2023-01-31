@@ -1,0 +1,3 @@
+name: com.android.server.cts.device.statsdatom
+mem: -1
+proc: com.android.server.cts.device.statsdatom

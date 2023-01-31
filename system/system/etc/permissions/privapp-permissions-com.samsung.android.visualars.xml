@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.visualars">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>

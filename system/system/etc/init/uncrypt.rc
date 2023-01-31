@@ -1,0 +1,40 @@
+on post-fs-data
+    # SAMSUNG
+    # create fota directory
+    mkdir /data/fota 0770 system system
+    mkdir /cache/fota 0770 system system
+    chmod 0660 /cache/recovery/command
+    chmod 0660 /cache/recovery/uncrypt_file
+    chmod 0660 /cache/fota/fota_path_command
+    chmod 0660 /cache/fota/install_recovery.log
+    chmod 0660 /cache/fota/fota.status
+    chown system system /cache/recovery/block.map
+    chown system system /cache/recovery/uncrypt_status
+
+on property:vendor.ota.recovery.status=*
+    start clear-fota
+
+service uncrypt /system/bin/uncrypt
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+service setup-bcb /system/bin/uncrypt --setup-bcb
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+service clear-bcb /system/bin/uncrypt --clear-bcb
+    class main
+    socket uncrypt stream 600 system system
+    disabled
+    oneshot
+
+service clear-fota /system/bin/uncrypt --clear-fota
+    class main
+    user root
+    group root system cache
+    disabled
+    oneshot

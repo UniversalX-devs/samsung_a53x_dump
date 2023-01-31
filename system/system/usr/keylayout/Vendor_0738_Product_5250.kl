@@ -1,0 +1,196 @@
+# Copyright (C) 2010 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+# Mad Catz CTRLR
+# ==============
+# VID: 0x0738
+# PID: 0x5250
+
+
+# Buttons
+# -------
+
+# A
+key usage 0x090001 BUTTON_A
+# B
+key usage 0x090002 BUTTON_B
+# X
+key usage 0x090004 BUTTON_X
+# Y
+key usage 0x090005 BUTTON_Y
+# L1
+key usage 0x090007 BUTTON_L1
+# R1
+key usage 0x090008 BUTTON_R1
+# L3
+key usage 0x09000e BUTTON_THUMBL
+# R3
+key usage 0x09000f BUTTON_THUMBR
+# Select - shift + Back
+key usage 0x09000b BUTTON_SELECT
+# Start - shift + Recent Apps
+key usage 0x09000c BUTTON_START
+# Game
+key 319   BUTTON_GAME
+key 417   BUTTON_GAME #(KEY_GAMES 0x01a1)
+
+key 103   DPAD_UP
+key 105   DPAD_LEFT
+key 106   DPAD_RIGHT
+key 108   DPAD_DOWN
+
+# SMAPP
+# -----
+
+# Recent Apps
+key 704 APP_SWITCH
+# Apps
+key 705 APPLICATION
+# S-Finder
+key 710 SFINDER
+# Multi Window
+key 712 MULTI_WINDOW
+# Screen Capture
+key 99 SYSRQ
+
+# Undefined
+# ---------
+# VR See Through - shift + Home
+# key 713 VRSEETHROUGH
+
+# Axes Left and right stick
+# -------------------------
+axis 0x00 X flat 128
+axis 0x01 Y flat 128
+axis 0x02 Z flat 128
+axis 0x05 RZ flat 128
+
+# Axes Triggers
+# -------------
+axis 0x09 GAS
+axis 0x0a BRAKE
+
+# Axes POV
+# --------
+axis 0x10 HAT_X
+axis 0x11 HAT_Y
+
+# Axes Etc
+# --------
+axis 0x03 RX
+axis 0x04 RY
+axis 0x06 THROTTLE
+axis 0x07 RUDDER
+axis 0x08 WHEEL
+
+# GENERIC
+# -------
+
+# Menu - blue + V
+key usage 0x0c0040 MENU
+# Search - orange + X
+key usage 0x0c0221 SEARCH
+# Increase Brightness - blue + dpad up
+key usage 0x0c006F BRIGHTNESS_UP
+# Decrease Brightness - blue + dpad down
+key usage 0x0c0070 BRIGHTNESS_DOWN
+# Next Track - shift + B (short press)
+key usage 0x0c00b5 MEDIA_NEXT
+# Fast Forward - shift + B (held)
+key usage 0x0c00b3 MEDIA_FAST_FORWARD
+# Previous Track - shift + X (short press)
+key usage 0x0c00b6 MEDIA_PREVIOUS
+# Rewind - shift + X (held)
+key usage 0x0c00b4 MEDIA_REWIND
+# Play/Pause - shift + Y
+key usage 0x0c00cd MEDIA_PLAY_PAUSE
+# Volume Down - shift + L1
+key usage 0x0c00ea VOLUME_DOWN
+# Volume Up - shift + R1
+key usage 0x0c00e9 VOLUME_UP
+# Home
+key usage 0x0c0223 HOME
+# Back
+key usage 0x0c0224 BACK
+
+key 139   MENU
+key 217   SEARCH
+
+key 224   BRIGHTNESS_DOWN
+key 225   BRIGHTNESS_UP
+
+key 113   VOLUME_MUTE
+key 114   VOLUME_DOWN
+key 115   VOLUME_UP
+key 172   HOME
+key 158   BACK
+
+key 163   MEDIA_NEXT
+key 164   MEDIA_PLAY_PAUSE
+key 165   MEDIA_PREVIOUS
+key 166   MEDIA_STOP
+key 167   MEDIA_RECORD
+key 208   MEDIA_FAST_FORWARD
+key 168   MEDIA_REWIND
+
+key 256   BUTTON_1
+key 257   BUTTON_2
+key 258   BUTTON_3
+key 259   BUTTON_4
+key 260   BUTTON_5
+key 261   BUTTON_6
+key 262   BUTTON_7
+key 263   BUTTON_8
+key 264   BUTTON_9
+key 265   BUTTON_10
+key 266   BUTTON_11
+key 267   BUTTON_12
+key 268   BUTTON_13
+key 269   BUTTON_14
+key 270   BUTTON_15
+key 271   BUTTON_16
+
+key 288   BUTTON_1
+key 289   BUTTON_2
+key 290   BUTTON_3
+key 291   BUTTON_4
+key 292   BUTTON_5
+key 293   BUTTON_6
+key 294   BUTTON_7
+key 295   BUTTON_8
+key 296   BUTTON_9
+key 297   BUTTON_10
+key 298   BUTTON_11
+key 299   BUTTON_12
+key 300   BUTTON_13
+key 301   BUTTON_14
+key 302   BUTTON_15
+key 303   BUTTON_16
+
+key 304   BUTTON_A
+key 305   BUTTON_B
+key 306   BUTTON_C
+key 307   BUTTON_X
+key 308   BUTTON_Y
+key 309   BUTTON_Z
+key 310   BUTTON_L1
+key 311   BUTTON_R1
+key 312   BUTTON_L2
+key 313   BUTTON_R2
+key 314   BUTTON_SELECT
+key 315   BUTTON_START
+key 316   BUTTON_MODE
+key 317   BUTTON_THUMBL
+key 318   BUTTON_THUMBR

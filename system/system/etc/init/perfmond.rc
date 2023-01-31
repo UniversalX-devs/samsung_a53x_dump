@@ -1,0 +1,20 @@
+service perfmond /system/bin/perfmond
+    class core
+    user system
+    group root readproc
+    critical
+    socket perfmond seqpacket 0660 system system
+    socket perfmon_send seqpacket 0660 system system
+
+# ATRACE
+on property:debug.perfmond.atrace=*
+    exec u:r:shell:s0 -- /system/bin/sh /system/bin/init.perfmond_atrace.sh
+
+on early-init
+    # make the PSI monitor accessible to others
+    chown system system /proc/pressure/memory
+    chown system system /proc/pressure/cpu
+    chown system system /proc/pressure/io
+    chmod 0664 /proc/pressure/memory
+    chmod 0664 /proc/pressure/cpu
+    chmod 0664 /proc/pressure/io

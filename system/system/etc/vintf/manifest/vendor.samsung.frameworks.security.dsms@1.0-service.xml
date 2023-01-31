@@ -1,0 +1,11 @@
+<manifest version="1.0" type="framework">
+    <hal format="hidl">
+        <name>vendor.samsung.frameworks.security.dsms</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehDsms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

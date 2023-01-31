@@ -1,0 +1,4 @@
+<packages>
+    <!-- <package name="com.example.app"/> -->
+    <package name="com.sohu.inputmethod.sogou.samsung"/>
+</packages>

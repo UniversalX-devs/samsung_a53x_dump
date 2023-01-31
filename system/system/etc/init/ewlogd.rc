@@ -1,0 +1,8 @@
+service ewlogd /system/bin/ewlogd
+    disabled
+    user system
+    group system
+    socket ewlogd dgram+passcred 0666 system system
+
+on property:persist.log.ewlogd=1
+    start ewlogd

@@ -1,0 +1,79 @@
+on charger
+    # /efs
+    wait /dev/block/by-name/sec_efs
+    mount ext4 /dev/block/by-name/sec_efs /efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
+    chown radio system /efs
+    chmod 0771 /efs
+    mkdir /efs/Battery
+    chmod 0775 /efs/Battery
+    chown radio system /efs/Battery
+    mkdir /efs/lpm
+    chmod 0775 /efs/lpm
+    chown system system /efs/lpm
+    chown radio system /efs/Battery/batt_capacity_max
+    chmod 0664 /efs/Battery/batt_capacity_max
+    chown radio system /efs/usb_hw_param
+    chmod 771 /efs/usb_hw_param
+    chown system system /efs/usb_hw_param/usb_hw_param.log
+    chmod 0660 /efs/usb_hw_param/usb_hw_param.log
+    chown system system /efs/FactoryApp/cisd_data
+    chmod 0640 /efs/FactoryApp/cisd_data
+    chown system system /efs/FactoryApp/cisd_tx_data
+    chmod 0640 /efs/FactoryApp/cisd_tx_data
+    chown system system /efs/FactoryApp/cisd_event_data
+    chmod 0640 /efs/FactoryApp/cisd_event_data
+    chown system system /efs/FactoryApp/cisd_fullcaprep_max
+    chmod 0640 /efs/FactoryApp/cisd_fullcaprep_max
+    chown system system /efs/FactoryApp/batt_after_manufactured
+    chmod 0640 /efs/FactoryApp/batt_after_manufactured
+    chown system system /efs/FactoryApp/batt_discharge_level
+    chmod 0640 /efs/FactoryApp/batt_discharge_level
+    chown system system /efs/FactoryApp/prev_batt_data
+    chmod 0660 /efs/FactoryApp/prev_batt_data
+    chown system system /efs/FactoryApp/asoc
+    chmod 0660 /efs/FactoryApp/asoc
+    chown system system /efs/FactoryApp/cisd_wc_data
+    chmod 0660 /efs/FactoryApp/cisd_wc_data
+    chown system system /efs/FactoryApp/cisd_pd_data
+    chmod 0660 /efs/FactoryApp/cisd_pd_data
+    chown system system /efs/FactoryApp/digital_hall
+    chmod 0664 /efs/FactoryApp/digital_hall
+    # /cache
+    wait /dev/block/by-name/cache
+    mount ext4 /dev/block/by-name/cache /cache nosuid nodev barrier=1
+    chown radio system /cache
+    mkdir /cache/lpm
+    chmod 0770 /cache/lpm
+    chown system system /cache/lpm
+    # /sys
+    chmod 0664 /sys/class/power_supply/battery/batt_temp_table
+    chown system radio /sys/class/power_supply/battery/batt_temp_table
+    chmod 0664 /sys/class/power_supply/battery/batt_capacity_max
+    chown system radio /sys/class/power_supply/battery/batt_capacity_max
+    chmod 0664 /sys/class/power_supply/battery/battery_cycle
+    chown system radio /sys/class/power_supply/battery/battery_cycle
+    chmod 0664 /sys/class/power_supply/battery/batt_after_manufactured
+    chown system radio /sys/class/power_supply/battery/batt_after_manufactured
+    chown system radio /sys/class/power_supply/battery/cisd_fullcaprep_max
+    chmod 0660 /sys/class/power_supply/battery/cisd_fullcaprep_max
+    chown system radio /sys/class/power_supply/battery/cisd_data
+    chmod 0660 /sys/class/power_supply/battery/cisd_data
+    chown system radio /sys/class/power_supply/battery/cisd_data_efs_path
+    chmod 0660 /sys/class/power_supply/battery/cisd_data_efs_path
+    chown system system /sys/class/sec/digital_hall/digital_hall_thd
+    chmod 0664 /sys/class/sec/digital_hall/digital_hall_thd
+    chown system system /sys/class/leds/lcd-backlight/brightness
+    chmod 0660 /sys/class/leds/lcd-backlight/brightness
+    # etc
+    copy /system/vendor/firmware/battery_data.dat /efs/Battery/battery_data.dat
+    chmod 0400 /efs/Battery/battery_data.dat
+    trigger firmware_mounts_complete
+    write /sys/class/power_supply/battery/batt_update_data "/efs/Battery/battery_data.dat"
+    chmod 0660 /sys/power/wakeup_count
+    class_start sec-charger
+
+service lpm /system/bin/lpm
+    class sec-charger
+    user root
+    group system radio input
+    critical

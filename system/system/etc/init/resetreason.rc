@@ -1,0 +1,18 @@
+# SystemF/W, System SW, SAMSUNG
+# allow remain reset info in RR.p
+# change to start service
+
+service resetreason /system/bin/resetreason
+    class main
+    user system
+    group system wakelock
+    capabilities BLOCK_SUSPEND
+    disabled
+    oneshot
+
+on post-fs-data
+    mkdir /data/misc/reboot 0700 system system
+
+on init
+    chown system system /proc/reset_reason
+    chmod 0440 /proc/reset_reason

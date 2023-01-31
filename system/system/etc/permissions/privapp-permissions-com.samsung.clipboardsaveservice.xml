@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.samsung.clipboardsaveservice">
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.SET_PROCESS_LIMIT"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,22 @@
+import /prism/etc/init/init.rc
+
+service scs /system/bin/scs
+    class main
+    user root
+    group root system radio
+    disabled
+    oneshot
+
+on post-fs
+    omc_update
+    exec_start scs
+
+on property:ro.persistent_properties.ready=true
+    exec_start scs
+    mkdir /data/log/omc 0771 radio log
+
+on property:vold.decrypt=trigger_post_fs_data
+    exec_start scs
+
+on property:ro.crypto.type=file && property:vold.post_fs_data_done=1
+    exec_start scs

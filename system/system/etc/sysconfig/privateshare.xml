@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>	
+	<allow-in-power-save package="com.samsung.android.privateshare" />
+	<allow-in-power-save-except-idle package="com.samsung.android.privateshare" />	
+	<app-link package="com.samsung.android.privateshare" />
+</config>

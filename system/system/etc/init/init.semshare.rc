@@ -1,0 +1,4 @@
+# Samsung Private Share
+on post-fs-data
+    mkdir /data/semprivateshare 0775 system system
+# Samsung Private Share

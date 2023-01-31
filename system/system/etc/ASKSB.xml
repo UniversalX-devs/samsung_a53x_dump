@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VERSION value="20220314"/>
+<LIST>
+  <HASHVALUE name="20ea88fbb7b65d287ce42d1bdafb2be594489e04586bbcbd3f1065f9d7f1fe3a">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="76d566d46dbeb662a1bd933332fb9b6af8ea177d719ac421e8362c4bfb14e860">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="7943a832f9b45b1911f8a47a710ae966d9f8c8a36f60e0106bb317bed102515a">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="9c650e6a9b4ef562221d10a93a7d941a9fc74cccba41b3f3a765f1476a42d2b2">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="560e0499d0a48a88fee711a54d6f885a32b88840eb250039cd3908faffcd74fa">
+    <HASH value="fa7f5ee3c930d7a0c6866a33928ae58a64ad7afd11be6fb365bb651a7a571bcd"/>
+    <HASH value="194f9dc688d98dac00dbe136792e0a004d1e9a2331c1d8e3d767d7ba061b8ea4"/>
+    <HASH value="8f7a693bd497c53904c470cd2274ac1ca453fbba311bd12f6468179983c60551"/>
+  </HASHVALUE>
+  <HASHVALUE name="7db5a95db5b61ae33e48eedd4d11b01a12fab5e971ebdeef59af510fa1aad957">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="8de8707e016bf3ad0deac25b4a391ce7f355af8881e2fdd452f44f890ef3cf5f">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+    <HASHVALUE name="825b8dc3ec3127d1caa08e6566e72b009bca150d08c5d3ad73ba6a786ff7cc9b">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="74e0da61ec3562a691c1f94a53f3ba84c954e34280e00d601f3e186e3690aeb3">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="697e37cd23f67f23742418ae533ffc2d5c057c2c0901ec1c2f759c13dc2ba3f1">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="9729c9469bf5edff877e5ae32389c4e2edffdfb8a850ea6abcf0dab8b53e92c8">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+  <HASHVALUE name="bae3ede713477cdca503064912fe67a4166ee8e62e086eef74967bbd90fa5996">
+    <HASH value="ALL"/>
+  </HASHVALUE>
+</LIST>

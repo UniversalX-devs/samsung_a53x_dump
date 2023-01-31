@@ -1,0 +1,14 @@
+# esecos_daemon
+service esecos_daemon /system/bin/esecos_daemon
+    class core
+    user system
+    group system nfc readproc
+    oneshot
+    disabled
+
+on early-boot
+    setprop security.esecosdaemonstate 0
+    start esecos_daemon
+
+on property:security.esecosdaemonstate=1
+    stop esecos_daemon

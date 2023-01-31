@@ -1,0 +1,40 @@
+user=_app seinfo=platform name=com.samsung.android.app.kfa domain=kfa_app type=app_data_file
+user=system seinfo=platform name=com.samsung.aasaservice domain=aasa_service_app type=aasa_service_app_data_file levelFrom=user
+user=_app seinfo=filtered_untrusted name=com.att.firstnet.grey* domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.ucm.baiplugin domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.sec.smartcard.manager domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=sec_untrusted name=com.sec.android.service.singlesignon domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.oneconnect* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=samsung name=com.samsung.android.voicewakeup domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.sdm.sdmviewer domain=platform_app type=app_data_file
+user=_app seinfo=sec_untrusted name=com.sds.stsm.esetest domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=release name=com.sec.android.app.shealth* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=shealth name=com.sec.android.app.shealth* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=filtered_untrusted name=com.expway.embmsserver* domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=filtered_untrusted name=com.jio.emiddleware domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=Reliance_Jio domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=trusted_dmb name=com.omnitel* domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=rjio domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=system seinfo=default domain=untrusted_app type=app_data_file levelFrom=user
+user=oem_5018 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_networkdiagnostic seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_ipsgeofence seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5014 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_mdxkit seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=vendor_sharelive seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5011 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oem_5016 seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=uwb seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=_app seinfo=vzw_untrusted domain=vzwfiltered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=xcal_untrusted domain=vzwfiltered_untrusted_app type=app_data_file levelFrom=user
+user=vendor_spay seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=spay seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oneseg domain=oneseg_apk type=app_data_file levelFrom=user
+user=_app seinfo=aasa_platform domain=aasa_platform_app type=app_data_file levelFrom=user
+user=oem_5500 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5501 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5502 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5503 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5504 domain=felica_app type=app_data_file
+user=vendor_felicalock domain=felica_app type=app_data_file levelFrom=user
+user=network_stack seinfo=platform domain=network_stack type=radio_data_file
