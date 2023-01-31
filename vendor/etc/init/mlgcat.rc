@@ -1,0 +1,4 @@
+# start after all subsystems are initialized
+on post-fs-data
+# MLGCAT permission
+	chmod 733 /vendor/bin/mlgcat

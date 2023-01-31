@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - Data Watchpoint/Trace Unit
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Data Watchpoint and Trace Unit"
+              class="S">
+  <register addr="e0001000" rw_flags="RW" width="4" name="DWT_CTRL" comment="Control Register"/>
+  <register addr="e0001004" rw_flags="RW" width="4" name="DWT_CYCCNT" comment="Cycle Count Register"/>
+  <register addr="e0001008" rw_flags="RW" width="4" name="DWT_CPICNT" comment="CPI Count Register"/>
+  <register addr="e000100c" rw_flags="RW" width="4" name="DWT_EXCCNT" comment="Exception Overhead Count Register"/>
+  <register addr="e0001010" rw_flags="RW" width="4" name="DWT_SLEEPCNT" comment="Sleep Count Register"/>
+  <register addr="e0001014" rw_flags="RW" width="4" name="DWT_LSUCNT" comment="LSU Count Register"/>
+  <register addr="e0001018" rw_flags="RW" width="4" name="DWT_FOLDCNT" comment="Folded-instruction Count Register"/>
+  <register addr="e000101c" rw_flags="R" width="4" name="DWT_PCSR" comment="Program Counter Sample Register"/>
+  <register addr="e0001020" rw_flags="RW" width="4" name="DWT_COMP0" comment="Comparator Register 0"/>
+  <register addr="e0001024" rw_flags="RW" width="4" name="DWT_MASK0" comment="Mask Register 0"/>
+  <register addr="e0001028" rw_flags="RW" width="4" name="DWT_FUNCTION0" comment="Function Register 0"/>
+  <register addr="e0001030" rw_flags="RW" width="4" name="DWT_COMP1" comment="Comparator Register 1"/>
+  <register addr="e0001034" rw_flags="RW" width="4" name="DWT_MASK1" comment="Mask Register 1"/>
+  <register addr="e0001038" rw_flags="RW" width="4" name="DWT_FUNCTION1" comment="Function Register 1"/>
+  <register addr="e0001040" rw_flags="RW" width="4" name="DWT_COMP2" comment="Comparator Register 2"/>
+  <register addr="e0001044" rw_flags="RW" width="4" name="DWT_MASK2" comment="Mask Register 2"/>
+  <register addr="e0001048" rw_flags="RW" width="4" name="DWT_FUNCTION2" comment="Function Register 2"/>
+  <register addr="e0001050" rw_flags="RW" width="4" name="DWT_COMP3" comment="Comparator Register 3"/>
+  <register addr="e0001054" rw_flags="RW" width="4" name="DWT_MASK3" comment="Mask Register 3"/>
+  <register addr="e0001058" rw_flags="RW" width="4" name="DWT_FUNCTION3" comment="Function Register 3"/>
+  <block name="Coresight Management Registers">
+    <register addr="e0001fd0" rw_flags="R" width="4" name="DWT_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e0001fd4" rw_flags="R" width="4" name="DWT_PID5" comment="Peripheral Identification Register 5"/>
+    <register addr="e0001fd8" rw_flags="R" width="4" name="DWT_PID6" comment="Peripheral Identification Register 6"/>
+    <register addr="e0001fdc" rw_flags="R" width="4" name="DWT_PID7" comment="Peripheral Identification Register 7"/>
+    <register addr="e0001fe0" rw_flags="R" width="4" name="DWT_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e0001fe4" rw_flags="R" width="4" name="DWT_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e0001fe8" rw_flags="R" width="4" name="DWT_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e0001fec" rw_flags="R" width="4" name="DWT_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e0001ff0" rw_flags="R" width="4" name="DWT_CID0" comment="Component Identification Register 0"/>
+    <register addr="e0001ff4" rw_flags="R" width="4" name="DWT_CID1" comment="Component Identification Register 1"/>
+    <register addr="e0001ff8" rw_flags="R" width="4" name="DWT_CID2" comment="Component Identification Register 2"/>
+    <register addr="e0001ffc" rw_flags="R" width="4" name="DWT_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

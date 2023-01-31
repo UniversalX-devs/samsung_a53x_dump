@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - Embedded Trace Macrocell Unit
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Embedded Trace Macrocell Unit"
+              class="S">
+  <register addr="e0041000" rw_flags="RW" width="4" name="ETM_CR" comment="Main Control Register"/>
+  <register addr="e0041004" rw_flags="R" width="4" name="ETM_CCR" comment="Configuration Code Register"/>
+  <register addr="e0041008" rw_flags="RW" width="4" name="ETM_TRIGGER" comment="Trigger Event Register"/>
+  <register addr="e0041010" rw_flags="RW" width="4" name="ETM_SR" comment="ETM Status Register"/>
+  <register addr="e0041014" rw_flags="R" width="4" name="ETM_SCR" comment="System Configuration register"/>
+  <register addr="e0041020" rw_flags="RW" width="4" name="ETM_TEEVR" comment="TraceEnable Event Register"/>
+  <register addr="e0041024" rw_flags="RW" width="4" name="ETM_TECR1" comment="TraceEnable Control 1 Register"/>
+  <register addr="e0041028" rw_flags="RW" width="4" name="ETM_FFLR" comment="FIFOFULL Level Register"/>
+  <register addr="e0041140" rw_flags="RW" width="4" name="ETM_CNTRLDVR1" comment="Free-running counter reload value"/>
+  <register addr="e00411e0" rw_flags="RW" width="4" name="ETM_SYNCFR" comment="Synchronisation Frequency Register"/>
+  <register addr="e00411e4" rw_flags="R" width="4" name="ETM_IDR" comment="ID Register"/>
+  <register addr="e00411e8" rw_flags="R" width="4" name="ETM_CCER" comment="Configuration Code Extension Register"/>
+  <register addr="e00411f0" rw_flags="RW" width="4" name="ETM_TESSEICR" comment="TraceEnable Start/Stop EmbeddedICE Control Register"/>
+  <register addr="e00411f8" rw_flags="RW" width="4" name="ETM_TSEVR" comment="Timestamp Event Register"/>
+  <register addr="e0041200" rw_flags="RW" width="4" name="ETM_TRACEIDR" comment="CoreSight Trace ID Register"/>
+  <register addr="e0041208" rw_flags="R" width="4" name="ETM_IDR2" comment="ETM ID Register 2"/>
+  <register addr="e0041314" rw_flags="R" width="4" name="ETM_PDSR" comment="Device Power-Down Status Register"/>
+  <register addr="e0041ee0" rw_flags="R" width="4" name="ETM_ITMISCIN" comment="Integration Test Miscellaneous Inputs"/>
+  <register addr="e0041ee8" rw_flags="W" width="4" name="ETM_ITTRIGOUT" comment="Integration Test Trigger Out"/>
+  <register addr="e0041ef0" rw_flags="R" width="4" name="ETM_ITATBCTR2" comment="ETM Integration Test ATB Control 2"/>
+  <register addr="e0041ef8" rw_flags="W" width="4" name="ETM_ITATBCTR0" comment="ETM Integration Test ATB Control 0"/>
+  <register addr="e0041f00" rw_flags="RW" width="4" name="ETM_ITCTRL" comment="Integration Mode Control Register"/>
+  <register addr="e0041fa0" rw_flags="RW" width="4" name="ETM_CLAIMSET" comment="Claim Tag Set Register"/>
+  <register addr="e0041fa4" rw_flags="RW" width="4" name="ETM_CLAIMCLR" comment="Claim Tag Clear Register"/>
+  <register addr="e0041fb0" rw_flags="RW" width="4" name="ETM_LAR" comment="Lock Access Register"/>
+  <register addr="e0041fb4" rw_flags="R" width="4" name="ETM_LSR" comment="Lock Status Register"/>
+  <register addr="e0041fb8" rw_flags="R" width="4" name="ETM_AUTHSTATUS" comment="Authentication Status Register"/>
+  <register addr="e0041fcc" rw_flags="R" width="4" name="ETM_DEVTYPE" comment="CoreSight Device Type Register"/>
+  <block name="Coresight Management Registers">
+    <register addr="e0041fd0" rw_flags="R" width="4" name="ETM_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e0041fd4" rw_flags="R" width="4" name="ETM_PID5" comment="Peripheral Identification Register 5"/>
+    <register addr="e0041fd8" rw_flags="R" width="4" name="ETM_PID6" comment="Peripheral Identification Register 6"/>
+    <register addr="e0041fdc" rw_flags="R" width="4" name="ETM_PID7" comment="Peripheral Identification Register 7"/>
+    <register addr="e0041fe0" rw_flags="R" width="4" name="ETM_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e0041fe4" rw_flags="R" width="4" name="ETM_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e0041fe8" rw_flags="R" width="4" name="ETM_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e0041fec" rw_flags="R" width="4" name="ETM_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e0041ff0" rw_flags="R" width="4" name="ETM_CID0" comment="Component Identification Register 0"/>
+    <register addr="e0041ff4" rw_flags="R" width="4" name="ETM_CID1" comment="Component Identification Register 1"/>
+    <register addr="e0041ff8" rw_flags="R" width="4" name="ETM_CID2" comment="Component Identification Register 2"/>
+    <register addr="e0041ffc" rw_flags="R" width="4" name="ETM_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

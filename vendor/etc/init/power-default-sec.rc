@@ -1,0 +1,5 @@
+service vendor.samsung.power-default /vendor/bin/hw/android.hardware.power.samsung-service
+    class hal
+    user system
+    group system
+    task_profiles ServiceCapacityLow

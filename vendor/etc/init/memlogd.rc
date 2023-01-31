@@ -1,0 +1,8 @@
+# start after all subsystems are initialized
+on post-fs-data
+# Memlogger daemon
+    service Memlogger-daemon /vendor/bin/memlogd
+    class main
+    user root
+    group root root
+    seclabel u:r:memlogd:s0

@@ -1,0 +1,20 @@
+[
+    {
+        "Updated" : {
+            "Date" : "2021/08/17 10:16:00"
+        },
+        "ParametersBasedOnNI" : {
+            "noiseIndex_length" : 10,
+            "noiseIndex_values" : [ 0, 1, 10, 20, 40, 80, 160, 320, 640, 1024 ],
+            "CurCmGain" : [ 70, 70, 70, 70, 70, 70, 70, 70, 70, 70 ],
+            "CurCmOffset" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+            "PrvCmGain" : [ 70, 70, 70, 70, 70, 70, 70, 70, 70, 70 ],
+            "PrvCmOffset" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+            "weightZSAD" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+            "weightAD" : [ 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ],
+            "NoiseLevel" : [ 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 ],
+            "medianStrengthLv1" : [ 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 ],
+            "enSpsClamp" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+        }
+    }
+]

@@ -1,0 +1,9 @@
+mmap: 1
+fstat: 1
+fstatfs: 1
+newfstatat: 1
+getuid: 1
+getrlimit: 1
+
+# for H/W Codec
+getdents64: 1

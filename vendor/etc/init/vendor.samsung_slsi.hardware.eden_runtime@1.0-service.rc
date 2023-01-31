@@ -1,0 +1,10 @@
+service eden_runtime /vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service
+    class hal
+    user system
+    group system
+# Permission for vertex10
+on post-fs
+    chmod 0644 /dev/vertex10
+on post-fs-data
+    mkdir /data/vendor/eden 0771 system system
+    mkdir /data/vendor/eden/gpu 0771 system system

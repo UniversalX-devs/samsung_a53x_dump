@@ -1,0 +1,104 @@
+{
+    "external_presets": [
+        {
+            "PresetId": 1,  // should be value from 1 to INT32_MAX
+            "name" : "preset1",
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                1196000,       // DSP frequency
+                3172000,       // MIF frequency
+                800000,        // INT frequency
+                -1,            // CPU (little) frequency
+                2808000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                9              // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ]
+            ]
+        },
+        {
+            "PresetId": 31000000,  // should be value from 1 to INT32_MAX
+            "name" : "SRIB_AcenetVideo_CAFFE_V003_scale_ncp.bin", // #31
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                9              // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 31100000,  // should be value from 1 to INT32_MAX
+            "name" : "acenet_video_v003_ncp.bin", // #31
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                9              // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        },
+        {
+            "PresetId": 32000000,  // should be value from 1 to INT32_MAX
+            "name" : "SRIB_MattingVideo_v003_test1_ncp.bin", // #32
+            "PresetVars": [
+                // -1 means 'not used'
+                1196000,       // NPU frequency
+                -1,       // DSP frequency
+                1592000,       // MIF frequency
+                533000,        // INT frequency
+                -1,            // CPU (little) frequency
+                1976000,       // CPU (middle) frequency
+                -1,            // CPU (big) frequency
+                9              // MO Scenario ID
+            ],
+            "PresetTypeScenario": [
+                // NPU, DSP, MIF, INT, CPU (little), CPU (middle), CPU (big), MO scenario ID, respectively.
+                // 1 is set, 0 is no effect
+                [ // openModel() ~ closeModel()
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [ // start to executeModel() ~ end to executeModel()
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        }
+    ]
+}

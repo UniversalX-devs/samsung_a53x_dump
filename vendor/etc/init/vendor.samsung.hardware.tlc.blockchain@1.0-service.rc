@@ -1,0 +1,11 @@
+service tlc_blockchain_serv /vendor/bin/hw/vendor.samsung.hardware.tlc.blockchain@1.0-service
+    interface vendor.samsung.hardware.tlc.blockchain@1.0::ISehBlockchain default
+
+    class hal
+    user system
+    group system
+    disabled
+
+on property:init.svc.zygote=restarting
+    stop tlc_blockchain_serv
+

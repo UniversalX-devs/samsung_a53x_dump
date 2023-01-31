@@ -1,0 +1,13 @@
+# Process Authenticator startup
+service proca /vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
+    class early_hal
+    user system
+    group system
+    disabled
+
+on property:sys.tzdaemon=Ready
+    start proca
+
+on late-fs && property:vendor.tzdaemon=Ready
+    start proca
+

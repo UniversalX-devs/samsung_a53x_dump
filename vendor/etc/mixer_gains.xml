@@ -1,0 +1,2511 @@
+<mixer>
+    <!-- Default Gain -->
+    <ctl name="VTS HPF SEL0" value="38" />
+    <ctl name="VTS HPF SEL1" value="38" />
+    <ctl name="VTS HPF EN0" value="enable" />
+    <ctl name="VTS HPF EN1" value="enable" />
+
+  <!-- Output mixer settings -->
+    <!-- Playback paths -->
+    <path name="gain-media-handset">
+    </path>
+
+    <path name="gain-media-headset">
+    </path>
+
+    <path name="gain-media-headphone">
+        <path name="gain-media-headset"/>
+    </path>
+
+    <path name="gain-media-speaker">
+    </path>
+
+    <path name="gain-media-speaker-top">
+    </path>
+
+    <path name="gain-media-speaker-bottom">
+    </path>
+
+    <path name="gain-media-bt-sco-headphone">
+    </path>
+
+    <path name="gain-media-bt-sco-headset">
+    </path>
+
+    <path name="gain-media-bt-a2dp-headphone">
+    </path>
+
+    <path name="gain-media-usb-headset">
+    </path>
+
+    <path name="gain-media-async-usb-headset">
+    </path>
+
+    <path name="gain-media-speaker-headset">
+    </path>
+
+    <path name="gain-media-speaker-bottom-headset">
+        <path name="gain-media-speaker-headset"/>
+    </path>
+
+    <path name="gain-media-speaker-headphone">
+        <path name="gain-media-speaker-headset"/>
+    </path>
+
+    <path name="gain-media-speaker-bottom-headphone">
+        <path name="gain-media-speaker-headset"/>
+    </path>
+
+    <path name="gain-media-speaker-bt-sco-headset">
+    </path>
+
+    <path name="gain-media-speaker-bottom-bt-sco-headset">
+    </path>
+
+    <path name="gain-media-speaker-bt-a2dp-headphone">
+    </path>
+
+    <path name="gain-media-speaker-bottom-bt-a2dp-headphone">
+    </path>
+
+    <path name="gain-media-speaker-usb-headset">
+    </path>
+
+    <path name="gain-media-speaker-bottom-usb-headset">
+    </path>
+
+    <path name="gain-media-speaker-async-usb-headset">
+    </path>
+
+    <path name="gain-media-speaker-bottom-async-usb-headset">
+    </path>
+
+    <!-- FM Radio paths -->
+    <path name="gain-fm_radio-speaker">
+    </path>
+
+    <path name="gain-fm_radio-speaker-bottom">
+    </path>
+
+    <path name="gain-fm_radio-headset">
+    </path>
+
+    <path name="gain-fm_radio-headphone">
+        <path name="gain-fm_radio-headset"/>
+    </path>
+
+    <path name="gain-fm_radio-usb-headset">
+    </path>
+
+    <path name="gain-fm_radio-async-usb-headset">
+    </path>
+
+    <path name="gain-fm_radio-bt-a2dp-headphone">
+    </path>
+
+    <path name="gain-fm_radio-external">
+    </path>
+
+    <!-- USBFM Radio paths -->
+    <path name="gain-usbfm_radio-speaker">
+    </path>
+
+    <path name="gain-usbfm_radio-speaker-bottom">
+    </path>
+
+    <path name="gain-usbfm_radio-usb-headset">
+    </path>
+
+    <path name="gain-usbfm_radio-bt-a2dp-headphone">
+    </path>
+
+    <path name="gain-usbfm_radio-external">
+    </path>
+
+    <!-- Remote MIC playback paths -->
+    <path name="gain-remote_mic-comp-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-remote_mic-comp-headset">
+    </path>
+
+    <path name="gain-remote_mic-comp-headphone">
+        <path name="gain-remote_mic-comp-headset"/>
+    </path>
+
+    <path name="gain-remote_mic-comp-bt-sco-headset">
+    </path>
+
+    <path name="gain-remote_mic-comp-usb-headset">
+    </path>
+
+    <path name="gain-remote_mic-comp-async-usb-headset">
+    </path>
+
+    <path name="gain-remote_mic-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-remote_mic-headset">
+    </path>
+
+    <path name="gain-remote_mic-headphone">
+        <path name="gain-remote_mic-headset"/>
+    </path>
+
+    <path name="gain-remote_mic-bt-sco-headset">
+    </path>
+
+    <path name="gain-remote_mic-usb-headset">
+    </path>
+
+    <path name="gain-remote_mic-async-usb-headset">
+    </path>
+
+    <!-- Ringtone playback paths -->
+    <path name="gain-ringtone-handset">
+    </path>
+
+    <path name="gain-ringtone-speaker">
+    </path>
+
+    <path name="gain-ringtone-speaker-bottom">
+    </path>
+
+    <path name="gain-ringtone-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-bottom-headset">
+    </path>
+
+    <path name="gain-ringtone-headphone">
+        <path name="gain-ringtone-headset"/>
+    </path>
+
+    <path name="gain-ringtone-speaker-bottom-headphone">
+        <path name="gain-ringtone-speaker-bottom-headset"/>
+    </path>
+
+    <path name="gain-ringtone-usb-headset">
+    </path>
+
+    <path name="gain-ringtone-async-usb-headset">
+    </path>
+
+    <path name="gain-ringtone-bt-sco-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-bt-sco-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-bottom-bt-sco-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-usb-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-bottom-usb-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-async-usb-headset">
+    </path>
+
+    <path name="gain-ringtone-speaker-bottom-async-usb-headset">
+    </path>
+
+    <!-- APCall(Communication) playback paths -->
+    <path name="gain-communication-handset">
+    </path>
+
+    <path name="gain-communication-speaker">
+    </path>
+
+    <path name="gain-communication-headset">
+    </path>
+
+    <path name="gain-communication-headphone">
+    </path>
+
+    <path name="gain-communication-speaker-bottom">
+    </path>
+
+    <path name="gain-communication-gaming-speaker">
+    </path>
+
+    <path name="gain-communication-gaming-speaker-bottom">
+    </path>
+
+    <path name="gain-communication-dex-speaker">
+    </path>
+
+    <path name="gain-communication-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-communication-tv-speaker">
+    </path>
+
+    <path name="gain-communication-tv-speaker-bottom">
+    </path>
+
+    <path name="gain-communication-bt-sco-headset">
+    </path>
+
+    <path name="gain-communication-usb-headset">
+    </path>
+
+    <path name="gain-communication-async-usb-headset">
+    </path>
+
+    <!-- samsung voip fmc playback -->
+    <path name="gain-samsung_voip_fmc-handset">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-speaker">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-speaker-bottom">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-dex-speaker">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-headset">
+    </path>
+    
+    <path name="gain-samsung_voip_fmc-headphone">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-bt-sco-headset">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-usb-headset">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-async-usb-headset">
+    </path>
+
+    <!-- VoIP playback paths -->
+    <path name="gain-voip-handset">
+    </path>
+
+    <path name="gain-voip-speaker">
+    </path>
+
+    <path name="gain-voip-speaker-bottom">
+    </path>
+
+    <path name="gain-voip-dex-speaker">
+    </path>
+
+    <path name="gain-voip-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-voip-headset">
+    </path>
+
+    <path name="gain-voip-headphone">
+    </path>
+
+    <path name="gain-voip-bt-sco-headset">
+    </path>
+
+    <path name="gain-voip-usb-headset">
+    </path>
+
+    <path name="gain-voip-async-usb-headset">
+    </path>
+
+    <!-- WiFICall playback paths -->
+    <!-- WiFiCall AP NB -->
+    <path name="gain-wificall_nb-handset">
+    </path>
+
+    <path name="gain-wificall_nb-speaker">
+    </path>
+
+    <path name="gain-wificall_nb-speaker-bottom">
+    </path>
+
+    <path name="gain-wificall_nb-dex-speaker">
+    </path>
+
+    <path name="gain-wificall_nb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-wificall_nb-headset">
+    </path>
+
+    <path name="gain-wificall_nb-headphone">
+    </path>
+
+    <path name="gain-wificall_nb-bt-sco-headset">
+    </path>
+
+    <path name="gain-wificall_nb-usb-headset">
+    </path>
+
+    <path name="gain-wificall_nb-async-usb-headset">
+    </path>
+
+    <!-- WiFiCall AP WB -->
+    <path name="gain-wificall_wb-handset">
+    </path>
+
+    <path name="gain-wificall_wb-speaker">
+    </path>
+
+    <path name="gain-wificall_wb-speaker-bottom">
+    </path>
+
+    <path name="gain-wificall_wb-dex-speaker">
+    </path>
+
+    <path name="gain-wificall_wb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-wificall_wb-headset">
+    </path>
+
+    <path name="gain-wificall_wb-headphone">
+    </path>
+
+    <path name="gain-wificall_wb-bt-sco-headset">
+    </path>
+
+    <path name="gain-wificall_wb-usb-headset">
+    </path>
+
+    <path name="gain-wificall_wb-async-usb-headset">
+    </path>
+
+    <!-- WiFiCall AP EVS -->
+    <path name="gain-wificall_evs-handset">
+    </path>
+
+    <path name="gain-wificall_evs-speaker">
+    </path>
+
+    <path name="gain-wificall_evs-speaker-bottom">
+    </path>
+
+    <path name="gain-wificall_evs-dex-speaker">
+    </path>
+
+    <path name="gain-wificall_evs-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-wificall_evs-headset">
+    </path>
+
+    <path name="gain-wificall_evs-headphone">
+    </path>
+
+    <path name="gain-wificall_evs-bt-sco-headset">
+    </path>
+
+    <path name="gain-wificall_evs-usb-headset">
+    </path>
+
+    <path name="gain-wificall_evs-async-usb-headset">
+    </path>
+
+    <!-- VideoCall playback paths -->
+    <path name="gain-video_call-handset">
+    </path>
+
+    <path name="gain-video_call-speaker">
+    </path>
+
+    <path name="gain-video_call-speaker-bottom">
+    </path>
+
+    <path name="gain-video_call-dex-speaker">
+    </path>
+
+    <path name="gain-video_call-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-video_call-headset">
+    </path>
+
+    <path name="gain-video_call-headphone">
+    </path>
+
+    <path name="gain-video_call-bt-sco-headset">
+    </path>
+
+    <path name="gain-video_call-usb-headset">
+    </path>
+
+    <path name="gain-video_call-async-usb-headset">
+    </path>
+
+    <!-- VoiceCall paths -->
+    <!-- VoiceCall CP NB -->
+    <path name="gain-incall_nb-handset">
+    </path>
+
+    <path name="gain-incall_nb-speaker">
+    </path>
+
+    <path name="gain-incall_nb-headset">
+    </path>
+
+    <path name="gain-incall_nb-headphone">
+    </path>
+
+    <path name="gain-incall_nb-speaker-bottom">
+    </path>
+
+    <path name="gain-incall_nb-dex-speaker">
+    </path>
+
+    <path name="gain-incall_nb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-incall_nb-bt-sco-headset">
+    </path>
+
+    <path name="gain-incall_nb-usb-headset">
+    </path>
+
+    <path name="gain-incall_nb-async-usb-headset">
+    </path>
+
+    <path name="gain-incall_nb-hearing-aid">
+    </path>
+
+    <!-- VoiceCall CP WB -->
+    <path name="gain-incall_wb-handset">
+    </path>
+
+    <path name="gain-incall_wb-speaker">
+    </path>
+
+    <path name="gain-incall_wb-headset">
+    </path>
+
+    <path name="gain-incall_wb-headphone">
+    </path>
+
+    <path name="gain-incall_wb-speaker-bottom">
+    </path>
+
+    <path name="gain-incall_wb-dex-speaker">
+    </path>
+
+    <path name="gain-incall_wb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-incall_wb-bt-sco-headset">
+    </path>
+
+    <path name="gain-incall_wb-usb-headset">
+    </path>
+
+    <path name="gain-incall_wb-async-usb-headset">
+    </path>
+
+    <path name="gain-incall_wb-hearing-aid">
+    </path>
+
+    <!-- VoiceCall CP FB -->
+    <path name="gain-incall_fb-handset">
+    </path>
+
+    <path name="gain-incall_fb-speaker">
+    </path>
+
+    <path name="gain-incall_fb-headset">
+    </path>
+
+    <path name="gain-incall_fb-headphone">
+    </path>
+
+    <path name="gain-incall_fb-speaker-top">
+    </path>
+
+    <path name="gain-incall_fb-speaker-bottom">
+    </path>
+
+    <path name="gain-incall_fb-dex-speaker">
+    </path>
+
+    <path name="gain-incall_fb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-incall_fb-bt-sco-headset">
+    </path>
+
+    <path name="gain-incall_fb-usb-headset">
+    </path>
+
+    <path name="gain-incall_fb-async-usb-headset">
+    </path>
+
+    <path name="gain-incall_fb-hearing-aid">
+    </path>
+
+    <!-- VoLTECall CP NB -->
+    <path name="gain-volte_cp_nb-handset">
+    </path>
+
+    <path name="gain-volte_cp_nb-speaker">
+    </path>
+
+    <path name="gain-volte_cp_nb-headset">
+    </path>
+
+    <path name="gain-volte_cp_nb-headphone">
+    </path>
+
+    <path name="gain-volte_cp_nb-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_nb-dex-speaker">
+    </path>
+
+    <path name="gain-volte_cp_nb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_nb-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_cp_nb-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_nb-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_nb-hearing-aid">
+    </path>
+
+    <!-- VoLTECall CP WB -->
+    <path name="gain-volte_cp_wb-handset">
+    </path>
+
+    <path name="gain-volte_cp_wb-speaker">
+    </path>
+
+    <path name="gain-volte_cp_wb-headset">
+    </path>
+
+    <path name="gain-volte_cp_wb-headphone">
+    </path>
+
+    <path name="gain-volte_cp_wb-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_wb-dex-speaker">
+    </path>
+
+    <path name="gain-volte_cp_wb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_wb-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_cp_wb-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_wb-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_wb-hearing-aid">
+    </path>
+
+    <!-- VoLTECall CP EVS -->
+    <path name="gain-volte_cp_evs-handset">
+    </path>
+
+    <path name="gain-volte_cp_evs-speaker">
+    </path>
+
+    <path name="gain-volte_cp_evs-headset">
+    </path>
+
+    <path name="gain-volte_cp_evs-headphone">
+    </path>
+
+    <path name="gain-volte_cp_evs-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_evs-dex-speaker">
+    </path>
+
+    <path name="gain-volte_cp_evs-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_evs-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_cp_evs-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_evs-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_evs-hearing-aid">
+    </path>
+
+    <!-- VoLTECall CP FB -->
+    <path name="gain-volte_cp_fb-handset">
+    </path>
+
+    <path name="gain-volte_cp_fb-speaker">
+    </path>
+
+    <path name="gain-volte_cp_fb-headset">
+    </path>
+
+    <path name="gain-volte_cp_fb-headphone">
+    </path>
+
+    <path name="gain-volte_cp_fb-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_fb-dex-speaker">
+    </path>
+
+    <path name="gain-volte_cp_fb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_cp_fb-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_cp_fb-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_fb-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_cp_fb-hearing-aid">
+    </path>
+
+    <!-- VoLTE VideoCall CP NB -->
+    <path name="gain-volte_vt_cp_nb-handset">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-headphone">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-dex-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-hearing-aid">
+    </path>
+
+    <!-- VoLTE VideoCall CP WB -->
+    <path name="gain-volte_vt_cp_wb-handset">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-headphone">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-dex-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-hearing-aid">
+    </path>
+
+    <!-- VoLTE VideoCall CP EVS -->
+    <path name="gain-volte_vt_cp_evs-handset">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-headphone">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-dex-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-hearing-aid">
+    </path>
+
+    <!-- VoLTE VideoCall CP FB -->
+    <path name="gain-volte_vt_cp_fb-handset">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-headphone">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-dex-speaker">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-dex-speaker-bottom">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-bt-sco-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-async-usb-headset">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-hearing-aid">
+    </path>
+
+    <!-- TTY Mode -->
+    <path name="gain-tty_mode-handset">
+    </path>
+
+    <path name="gain-tty_mode-headset">
+    </path>
+
+    <path name="gain-tty_mode-headphone">
+    </path>
+
+    <path name="gain-tty_mode-usb-headset">
+    </path>
+
+    <path name="gain-tty_mode-async-usb-headset">
+    </path>
+
+    <!-- AP TTY Mode -->
+    <path name="gain-ap_tty_mode-handset">
+    </path>
+
+    <path name="gain-ap_tty_mode-headset">
+    </path>
+    
+    <path name="gain-ap_tty_mode-headphone">
+    </path>
+
+    <path name="gain-ap_tty_mode-usb-headset">
+    </path>
+
+    <path name="gain-ap_tty_mode-async-usb-headset">
+    </path>
+
+    <path name="gain-karaoke-speaker">
+    </path>
+
+    <!-- call forwarding output -->
+    <path name="gain-call_forwarding_primary">
+    </path>
+
+    <!-- Spectro Scenario -->
+    <path name="gain-call_spectro">
+    </path>
+
+  <!-- Input mixer settings -->
+    <!-- Capture paths -->
+    <path name="gain-media-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="8738" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+    </path>
+
+    <path name="gain-media-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="21" />
+    </path>
+
+    <path name="gain-media-3rd-mic">
+    </path>
+
+    <path name="gain-media-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-media-headset-mic">
+    </path>
+
+    <path name="gain-media-headset-main-mic">
+    </path>
+
+    <path name="gain-media-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="8738" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+    </path>
+
+    <path name="gain-media-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-media-usb-headset-mic">
+    </path>
+
+    <path name="gain-media-async-usb-headset-mic">
+    </path>
+
+    <!-- Karaoke Listenback MIC paths -->
+    <path name="gain-listenback-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="8738" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+    </path>
+
+    <path name="gain-listenback-headset-mic">
+    </path>
+
+    <path name="gain-listenback-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="8738" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+    </path>
+
+    <path name="gain-listenback-usb-headset-mic">
+    </path>
+
+    <path name="gain-listenback-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-listenback-bt-sco-headset-in">
+    </path>
+
+    <!-- Voice Recording paths -->
+    <path name="gain-recording-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+    </path>
+
+    <path name="gain-recording-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-recording-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-recording-headset-mic">
+    </path>
+
+    <path name="gain-recording-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+    </path>
+
+    <path name="gain-recording-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-recording-usb-headset-mic">
+    </path>
+
+    <path name="gain-recording-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-interview-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="5911" />
+        <ctl name="VTS DMIC GAIN MODE1" value="5911" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="29" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="29" />
+    </path>
+
+    <!-- Camcording paths -->
+    <path name="gain-camcorder-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+    </path>
+
+    <path name="gain-camcorder-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-camcorder-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-camcorder-multi-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-camcorder-headset-mic">
+    </path>
+
+    <path name="gain-camcorder-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+    </path>
+
+    <path name="gain-camcorder-usb-headset-mic">
+    </path>
+
+    <path name="gain-camcorder-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-camcorder-multi-mic-bt-sco-headset-in">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- Recognition Input paths -->
+    <path name="gain-recognition-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6682" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="32" />
+    </path>
+
+    <path name="gain-recognition-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="32" />
+    </path>
+
+    <path name="gain-recognition-headset-mic">
+    </path>
+
+    <path name="gain-recognition-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="5140" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="32" />
+    </path>
+
+    <path name="gain-recognition-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-recognition-usb-headset-mic">
+    </path>
+
+    <path name="gain-recognition-async-usb-headset-mic">
+    </path>
+
+    <!-- bargein samsung input -->
+    <path name="gain-bargein_samsung_engine-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="5140" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="9" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="32" />
+    </path>
+
+    <path name="gain-bargein_samsung_engine-headset-mic">
+    </path>
+
+    <path name="gain-bargein_samsung_engine-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-bargein_samsung_engine-usb-headset-mic">
+    </path>
+
+    <path name="gain-bargein_samsung_engine-async-usb-headset-mic">
+    </path>
+
+    <!-- bargein external input -->
+    <path name="gain-bargein_external_engine-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="4626" />
+        <ctl name="VTS DMIC GAIN MODE1" value="2570" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="19" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="8" />
+    </path>
+
+    <path name="gain-bargein_external_engine-headset-mic">
+    </path>
+
+    <path name="gain-bargein_external_engine-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-bargein_external_engine-usb-headset-mic">
+    </path>
+
+    <path name="gain-bargein_external_engine-async-usb-headset-mic">
+    </path>
+
+    <!-- svoice/carmode samsung input -->
+    <path name="gain-dualmic_samsung_engine-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6682" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6425" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="32" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="32" />
+    </path>
+
+    <path name="gain-dualmic_samsung_engine-headset-mic">
+    </path>
+
+    <path name="gain-dualmic_samsung_engine-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-dualmic_samsung_engine-usb-headset-mic">
+    </path>
+
+    <path name="gain-dualmic_samsung_engine-async-usb-headset-mic">
+    </path>
+
+    <!-- svoice/carmode external input -->
+    <path name="gain-dualmic_external_engine-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="3084" />
+        <ctl name="VTS DMIC GAIN MODE1" value="5140" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="32" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="32" />
+    </path>
+
+    <path name="gain-dualmic_external_engine-headset-mic">
+    </path>
+
+    <path name="gain-dualmic_external_engine-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-dualmic_external_engine-usb-headset-mic">
+    </path>
+
+    <path name="gain-dualmic_external_engine-async-usb-headset-mic">
+    </path>
+
+    <!-- APCall TX paths -->
+    <path name="gain-communication-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-communication-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-communication-speaker-bottom-mic">
+        <path name="gain-communication-speaker-mic"/>
+    </path>
+
+    <path name="gain-communication-gaming-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-communication-gaming-speaker-bottom-mic">
+        <path name="gain-communication-gaming-speaker-mic"/>
+    </path>
+
+    <path name="gain-communication-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-communication-dex-speaker-bottom-mic">
+        <path name="gain-communication-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-communication-tv-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-communication-tv-speaker-bottom-mic">
+        <path name="gain-communication-tv-speaker-mic"/>
+    </path>
+
+    <path name="gain-communication-headset-mic">
+    </path>
+
+    <path name="gain-communication-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-communication-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-communication-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-communication-usb-headset-mic">
+    </path>
+
+    <path name="gain-communication-async-usb-headset-mic">
+    </path>
+
+    <!-- VoIP Input paths -->
+    <path name="gain-voip-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-voip-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-voip-speaker-bottom-mic">
+        <path name="gain-voip-speaker-mic"/>
+    </path>
+
+    <path name="gain-voip-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-voip-dex-speaker-bottom-mic">
+        <path name="gain-voip-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-voip-headset-mic">
+    </path>
+
+    <path name="gain-voip-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-voip-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-voip-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-voip-usb-headset-mic">
+    </path>
+
+    <path name="gain-voip-async-usb-headset-mic">
+    </path>
+
+    <!-- samsung voip fmc input -->
+    <path name="gain-samsung_voip_fmc-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-samsung_voip_fmc-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-samsung_voip_fmc-speaker-bottom-mic">
+        <path name="gain-samsung_voip_fmc-speaker-mic"/>
+    </path>
+
+    <path name="gain-samsung_voip_fmc-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-samsung_voip_fmc-dex-speaker-bottom-mic">
+        <path name="gain-samsung_voip_fmc-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-samsung_voip_fmc-headset-mic">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-samsung_voip_fmc-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-usb-headset-mic">
+    </path>
+
+    <path name="gain-samsung_voip_fmc-async-usb-headset-mic">
+    </path>
+
+    <!-- WiFiCall Input paths -->
+    <!-- WiFiCall AP NB -->
+    <path name="gain-wificall_nb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_nb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_nb-speaker-bottom-mic">
+        <path name="gain-wificall_nb-speaker-mic"/>
+    </path>
+
+    <path name="gain-wificall_nb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_nb-dex-speaker-bottom-mic">
+        <path name="gain-wificall_nb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-wificall_nb-headset-mic">
+    </path>
+
+    <path name="gain-wificall_nb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_nb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-wificall_nb-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-wificall_nb-usb-headset-mic">
+    </path>
+
+    <path name="gain-wificall_nb-async-usb-headset-mic">
+    </path>
+
+    <!-- WiFiCall AP WB -->
+    <path name="gain-wificall_wb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_wb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_wb-speaker-bottom-mic">
+        <path name="gain-wificall_wb-speaker-mic"/>
+    </path>
+
+    <path name="gain-wificall_wb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_wb-dex-speaker-bottom-mic">
+        <path name="gain-wificall_wb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-wificall_wb-headset-mic">
+    </path>
+
+    <path name="gain-wificall_wb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_wb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-wificall_wb-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-wificall_wb-usb-headset-mic">
+    </path>
+
+    <path name="gain-wificall_wb-async-usb-headset-mic">
+    </path>
+
+    <!-- WiFiCall AP EVS -->
+    <path name="gain-wificall_evs-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_evs-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_evs-speaker-bottom-mic">
+        <path name="gain-wificall_evs-speaker-mic"/>
+    </path>
+
+    <path name="gain-wificall_evs-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_evs-dex-speaker-bottom-mic">
+        <path name="gain-wificall_evs-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-wificall_evs-headset-mic">
+    </path>
+
+    <path name="gain-wificall_evs-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-wificall_evs-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-wificall_evs-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-wificall_evs-usb-headset-mic">
+    </path>
+
+    <path name="gain-wificall_evs-async-usb-headset-mic">
+    </path>
+
+    <!-- Video Call Input paths -->
+    <path name="gain-video_call-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-video_call-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-video_call-speaker-bottom-mic">
+        <path name="gain-video_call-speaker-mic"/>
+    </path>
+
+    <path name="gain-video_call-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-video_call-dex-speaker-bottom-mic">
+        <path name="gain-video_call-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-video_call-headset-mic">
+    </path>
+
+    <path name="gain-video_call-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-video_call-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-video_call-bt-sco-nrec-headset-in">
+    </path>
+
+    <path name="gain-video_call-usb-headset-mic">
+    </path>
+
+    <path name="gain-video_call-async-usb-headset-mic">
+    </path>
+
+    <!-- VoiceCall TX paths -->
+    <!-- VoiceCall CP NB -->
+    <path name="gain-incall_nb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_nb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_nb-speaker-bottom-mic">
+        <path name="gain-incall_nb-speaker-mic"/>
+    </path>
+
+    <path name="gain-incall_nb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_nb-dex-speaker-bottom-mic">
+        <path name="gain-incall_nb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-incall_nb-headset-mic">
+    </path>
+
+    <path name="gain-incall_nb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_nb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-incall_nb-usb-headset-mic">
+    </path>
+
+    <path name="gain-incall_nb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-incall_nb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoiceCall CP WB -->
+    <path name="gain-incall_wb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_wb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_wb-speaker-bottom-mic">
+        <path name="gain-incall_wb-speaker-mic"/>
+    </path>
+
+    <path name="gain-incall_wb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_wb-dex-speaker-bottom-mic">
+        <path name="gain-incall_wb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-incall_wb-headset-mic">
+    </path>
+
+    <path name="gain-incall_wb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_wb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-incall_wb-usb-headset-mic">
+    </path>
+
+    <path name="gain-incall_wb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-incall_wb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoiceCall CP FB -->
+    <path name="gain-incall_fb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_fb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_fb-speaker-bottom-mic">
+        <path name="gain-incall_fb-speaker-mic"/>
+    </path>
+
+    <path name="gain-incall_fb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_fb-dex-speaker-bottom-mic">
+        <path name="gain-incall_fb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-incall_fb-headset-mic">
+    </path>
+
+    <path name="gain-incall_fb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-incall_fb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-incall_fb-usb-headset-mic">
+    </path>
+
+    <path name="gain-incall_fb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-incall_fb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoLTECall TX paths -->
+    <!-- VoiceCall CP NB -->
+    <path name="gain-volte_cp_nb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_nb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_nb-speaker-bottom-mic">
+        <path name="gain-volte_cp_nb-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_nb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_nb-dex-speaker-bottom-mic">
+        <path name="gain-volte_cp_nb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_nb-headset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_nb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_nb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_cp_nb-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_nb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_nb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoiceCall CP WB -->
+    <path name="gain-volte_cp_wb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_wb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_wb-speaker-bottom-mic">
+        <path name="gain-volte_cp_wb-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_wb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_wb-dex-speaker-bottom-mic">
+        <path name="gain-volte_cp_wb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_wb-headset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_wb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_wb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_cp_wb-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_wb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_wb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoiceCall CP EVS -->
+    <path name="gain-volte_cp_evs-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_evs-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_evs-speaker-bottom-mic">
+        <path name="gain-volte_cp_evs-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_evs-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_evs-dex-speaker-bottom-mic">
+        <path name="gain-volte_cp_evs-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_evs-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_evs-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_evs-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_cp_evs-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_evs-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_evs-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoiceCall CP FB -->
+    <path name="gain-volte_cp_fb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_fb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_fb-speaker-bottom-mic">
+        <path name="gain-volte_cp_fb-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_fb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_fb-dex-speaker-bottom-mic">
+        <path name="gain-volte_cp_fb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_cp_fb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_fb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_cp_fb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_cp_fb-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_fb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_cp_fb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoLTE VideoCall TX paths -->
+    <!-- VoLTE VideoCall CP NB -->
+    <path name="gain-volte_vt_cp_nb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_nb-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-dex-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_nb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_nb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoLTE VideoCall CP WB -->
+    <path name="gain-volte_vt_cp_wb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_wb-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-dex-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_wb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_wb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoLTE VideoCall CP EVS -->
+    <path name="gain-volte_vt_cp_evs-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_evs-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-dex-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_evs-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_evs-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- VoLTE VideoCall CP FB -->
+    <path name="gain-volte_vt_cp_fb-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_fb-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-dex-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-dex-speaker-bottom-mic">
+        <path name="gain-volte_vt_cp_fb-dex-speaker-mic"/>
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-headphone-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-async-usb-headset-mic">
+    </path>
+
+    <path name="gain-volte_vt_cp_fb-hearing-aid-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <!-- TTY Mode Input paths -->
+    <path name="gain-tty_mode-vco-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="8" />
+    </path>
+
+    <path name="gain-tty_mode-full-mic">
+    </path>
+
+    <path name="gain-tty_mode-hco-mic">
+    </path>
+
+    <path name="gain-tty_mode-usb-full-mic">
+    </path>
+
+    <path name="gain-tty_mode-usb-hco-mic">
+    </path>
+
+    <path name="gain-tty_mode-async-usb-full-mic">
+    </path>
+
+    <path name="gain-tty_mode-async-usb-hco-mic">
+    </path>
+
+    <!-- AP TTY Mode Input paths -->
+    <path name="gain-ap_tty_mode-vco-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="8" />
+    </path>
+
+    <path name="gain-ap_tty_mode-full-mic">
+    </path>
+
+    <path name="gain-ap_tty_mode-hco-mic">
+    </path>
+
+    <path name="gain-ap_tty_mode-usb-full-mic">
+    </path>
+
+    <path name="gain-ap_tty_mode-usb-hco-mic">
+    </path>
+
+    <path name="gain-ap_tty_mode-async-usb-full-mic">
+    </path>
+
+    <path name="gain-ap_tty_mode-async-usb-hco-mic">
+    </path>
+
+    <!-- Call Forwarding Input paths -->
+    <path name="gain-call_forwarding_primary-mic">
+    </path>
+
+    <!-- Factory test paths -->
+    <!-- Output -->
+    <path name="gain-factory-media-handset">
+    </path>
+
+    <path name="gain-factory-media-speaker-top">
+    </path>
+
+    <!-- Loopback (no delay) -->
+    <path name="gain-loopback-headset">
+    </path>
+
+    <!-- Packet Loopback -->
+    <path name="gain-loopback_packet-handset">
+    </path>
+
+    <path name="gain-loopback_packet-speaker">
+    </path>
+
+    <path name="gain-loopback_packet-speaker-top">
+    </path>
+
+    <path name="gain-loopback_packet-speaker-bottom">
+    </path>
+
+    <path name="gain-loopback_packet-headset">
+    </path>
+
+    <path name="gain-loopback_packet-usb-headset">
+    </path>
+
+    <path name="gain-loopback_packet-async-usb-headset">
+    </path>
+
+    <path name="gain-loopback_packet-lcia-handset">
+    </path>
+
+    <!-- Packet Loopback FB -->
+    <path name="gain-loopback_packet_fb-handset">
+    </path>
+
+    <path name="gain-loopback_packet_fb-speaker">
+    </path>
+
+    <path name="gain-loopback_packet_fb-speaker-top">
+    </path>
+
+    <path name="gain-loopback_packet_fb-speaker-bottom">
+    </path>
+
+    <path name="gain-loopback_packet_fb-headset">
+    </path>
+
+    <path name="gain-loopback_packet_fb-usb-headset">
+    </path>
+
+    <path name="gain-loopback_packet_fb-async-usb-headset">
+    </path>
+
+    <path name="gain-loopback_packet_fb-lcia-handset">
+    </path>
+
+    <!-- Realtime Loopback -->
+    <path name="gain-realtimeloopback-handset">
+    </path>
+
+    <path name="gain-realtimeloopback-speaker">
+    </path>
+
+    <path name="gain-realtimeloopback-speaker-bottom">
+    </path>
+
+    <path name="gain-realtimeloopback-bt-sco-headset">
+    </path>
+
+    <path name="gain-realtimeloopback-headset">
+    </path>
+
+    <path name="gain-realtimeloopback-usb-headset">
+    </path>
+
+    <path name="gain-realtimeloopback-async-usb-headset">
+    </path>
+
+    <!-- echo(rms) test output -->
+    <path name="gain-echo_test-handset">
+    </path>
+
+    <path name="gain-echo_test-speaker">
+    </path>
+
+    <path name="gain-echo_test-speaker-top">
+    </path>
+
+    <path name="gain-echo_test-speaker-bottom">
+    </path>
+
+    <path name="gain-echo_thd_test-handset">
+    </path>
+
+    <path name="gain-echo_thd_test-speaker">
+    </path>
+
+    <path name="gain-echo_thd_test-speaker-top">
+    </path>
+
+    <path name="gain-echo_thd_test-speaker-bottom">
+    </path>
+
+    <!-- Input -->
+    <!-- Loopback Input (no delay) -->
+    <path name="gain-loopback-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+    </path>
+
+    <path name="gain-loopback-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="19" />
+    </path>
+
+    <!-- Packet Loopback Input -->
+    <path name="gain-loopback_packet-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+    </path>
+
+    <path name="gain-loopback_packet-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="19" />
+    </path>
+
+    <path name="gain-loopback_packet-3rd-mic">
+    </path>
+
+    <path name="gain-loopback_packet-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet-handset-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet-handset-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet-speaker-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet-speaker-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="19" />
+    </path>
+
+    <path name="gain-loopback_packet-headset-mic">
+    </path>
+
+    <path name="gain-loopback_packet-usb-headset-mic">
+    </path>
+
+    <path name="gain-loopback_packet-async-usb-headset-mic">
+    </path>
+
+    <!-- Packet Loopback FB Input -->
+    <path name="gain-loopback_packet_fb-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+    </path>
+
+    <path name="gain-loopback_packet_fb-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="19" />
+    </path>
+
+    <path name="gain-loopback_packet_fb-3rd-mic">
+    </path>
+
+    <path name="gain-loopback_packet_fb-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet_fb-handset-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet_fb-speaker-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-loopback_packet_fb-headset-mic">
+    </path>
+
+    <path name="gain-loopback_packet_fb-usb-headset-mic">
+    </path>
+
+    <path name="gain-loopback_packet_fb-async-usb-headset-mic">
+    </path>
+
+    <!-- Packet Loopback incallmusic input -->
+    <path name="gain-loopback_packet-incallmusic-mic">
+    </path>
+
+    <!-- Realtime Loopback Input -->
+    <path name="gain-realtimeloopback-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="8738" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+    </path>
+
+    <path name="gain-realtimeloopback-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="11" />
+    </path>
+
+    <path name="gain-realtimeloopback-3rd-mic">
+    </path>
+
+    <path name="gain-realtimeloopback-headset-mic">
+    </path>
+
+    <path name="gain-realtimeloopback-bt-sco-headset-in">
+    </path>
+
+    <path name="gain-realtimeloopback-usb-headset-mic">
+    </path>
+
+    <path name="gain-realtimeloopback-async-usb-headset-mic">
+    </path>
+
+    <!-- echo(rms) test input -->
+    <path name="gain-echo_test-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="5911" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="18" />
+    </path>
+
+    <path name="gain-echo_test-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="5911" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="9" />
+    </path>
+
+    <path name="gain-echo_test-3rd-mic">
+    </path>
+
+    <path name="gain-echo_test-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="34" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-echo_test-multi-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="24" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="34" />
+    </path>
+
+    <path name="gain-echo_thd_test-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+    </path>
+
+    <path name="gain-echo_thd_test-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+    </path>
+
+    <path name="gain-echo_thd_test-3rd-mic">
+    </path>
+
+    <path name="gain-echo_thd_test-dualmic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="34" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-echo_thd_test-multi-mic">
+        <ctl name="VTS DMIC GAIN MODE0" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN0" value="34" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+    </path>
+
+    <path name="gain-karaoke-2nd-mic">
+        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS CONTROL DMIC AUD GAIN1" value="21" />
+    </path>
+</mixer>

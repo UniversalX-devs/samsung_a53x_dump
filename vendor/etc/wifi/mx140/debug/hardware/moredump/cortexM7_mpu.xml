@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2020, moredump definitions for Cortex M7 processor - Memory Protection Unit
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Memory Protection Unit"
+              class="S">
+
+  <register addr="e000ed90" rw_flags="R" width="4" name="MPU_TYPE" comment="MPU Type Register"/>
+  <register addr="e000ed94" rw_flags="RW" width="4" name="MPU_CTRL" comment="MPU Control Register"/>
+  <table name="MPU Regions">
+    <indexregister addr="e000ed98" rw_flags="RW" width="4" name="MPU_RNR" comment="MPU Region Number Register">
+      <countfrom addr="e000ed90" rw_flags="RW" width="4" name="MPU_TYPE" comment="MPU type register" shift="8" mask="00FF"/>
+    </indexregister>
+    <register addr="e000ed9c" rw_flags="RW" width="4" name="MPU_RBAR" comment="MPU Region Base Address Register"/>
+    <register addr="e000eda0" rw_flags="RW" width="4" name="MPU_RASR" comment="MPU Region Attribute and Size Register"/>
+  </table>
+  <register addr="e000eda4" rw_flags="RW" width="4" name="MPU_RBAR_A1" comment="MPU Region Base Address Register alias 1"/>
+  <register addr="e000eda8" rw_flags="RW" width="4" name="MPU_RASR_A1" comment="MPU Region Attribute and Size Register alias 1"/>
+  <register addr="e000edac" rw_flags="RW" width="4" name="MPU_RBAR_A2" comment="MPU Region Base Address Register alias 2"/>
+  <register addr="e000edb0" rw_flags="RW" width="4" name="MPU_RASR_A2" comment="MPU Region Attribute and Size Register alias 2"/>
+  <register addr="e000edb4" rw_flags="RW" width="4" name="MPU_RBAR_A3" comment="MPU Region Base Address Register alias 3"/>
+  <register addr="e000edb8" rw_flags="RW" width="4" name="MPU_RASR_A3" comment="MPU Region Attribute and Size Register alias 3"/>
+</memorymapped>

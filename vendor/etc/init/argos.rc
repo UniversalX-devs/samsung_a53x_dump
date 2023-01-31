@@ -1,0 +1,9 @@
+on post-fs-data
+    # ARGOSD network_throughput
+    chown system system /dev/network_throughput
+
+# ARGOSD
+service argos-daemon /vendor/bin/argosd
+    class main
+    user system
+    group system radio

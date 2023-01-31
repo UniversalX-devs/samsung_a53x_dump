@@ -1,0 +1,2 @@
+on early-boot
+    setprop vendor.camera.unihal.enable true

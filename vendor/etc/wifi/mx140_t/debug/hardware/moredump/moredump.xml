@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2021, definitions for moredump4: papaya (boba) platform
+-->
+
+<!--
+NOTES:
+* memory region ranges and sizes will need to be revisited and confirmed/corrected at some point
+* dev node names may change so this file should be updated accordingly
+-->
+
+<moredump4 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Moredump4.xsd">
+
+  <target name="papaya" aka="mxl300" idat="d0000000" chipid="A8" firmware="80000000"
+          comment="http://cognidox/cgi-perl/part-details?partnum=SC-508606-DD">
+    <!-- Define the mmap range(s) -->
+    <mmap startAddr="80000000" endAddr="807fffff" dev="/dev/mx_0_mmap"/>
+
+    <!-- Nodes in cpu section(s) are only accessible by the enclosing CPU -->
+    <cpu name="CortexR7" xml="cortexR7.xml">
+      <instance t32API="20000" t32GDB="30000" dev="/dev/mx_0_wlan_gdb" subsys="WLAN" errorIfDisconnected="true"/>
+
+      <extraXml name="GIC Distributor Interface" xml="periph_gic_registers.xml"/>
+      <extraXml name="GIC CPU Interface" xml="periph_int_ifc_registers.xml"/>
+
+      <memory startAddr="00000000" endAddr="0000ffff" name="ITCM" comment="64KB" />
+      <memory startAddr="08000000" endAddr="0800ffff" name="DTCM" comment="64KB" />
+      <memory startAddr="20000000" endAddr="2000ffff" name="RAMI0" comment="64KB" />
+      <memory startAddr="28000000" endAddr="2800ffff" name="RAMD0" comment="64KB" />
+      <memory startAddr="30000000" endAddr="3000ffff" name="RAMI1" comment="64KB" />
+      <memory startAddr="38000000" endAddr="3800ffff" name="RAMD1" comment="64KB" />
+      <memory startAddr="60000000" endAddr="6003bfff" name="RAMS" comment="240KB" />
+
+      <subsystem name="PERW0" xml="perw_registers.xml" comment=""/>
+      <subsystem name="PERW1" xml="perw_registers.xml" offset="10000000" comment="Second instance of PERW at higher address"/>
+      <subsystem name="PERI" xml="peri_registers.xml" comment=""/>
+    </cpu>
+
+    <cpu name="CortexM3" xml="cortexM3.xml">
+      <instance index="0" t32API="20001" t32GDB="30001" dev="/dev/mx_0_fxm_1_gdb" subsys="WLAN">
+        <!-- "mapped" memory includes regions shared within WLAN (i.e, between the R7 and the M3 instances) but not with the M7 (WPAN)-->
+        <map name="RAMI0" target="00000000" comment="RAMI0 remapped to 0x00000000" />
+        <map name="RAMD0" target="08000000" comment="RAMD0 remapped to 0x08000000" />
+        <map name="PERW0" target="A0000000" comment="PERW0 remapped at 0xA0000000" />
+        <map name="PERI" target="D0000000" comment="PERI shared with R7" />
+        <map name="RAMS" target="60000000" comment="RAMS shared with R7" />
+      </instance>
+
+      <instance index="1" t32API="20002" t32GDB="30002" dev="/dev/mx_0_fxm_2_gdb" subsys="WLAN">
+        <!-- "mapped" memory includes regions shared within WLAN (i.e, between the R7 and the M3 instances) but not with the M7 (WPAN)-->
+        <map name="RAMI1" target="00000000" comment="RAMI1 remapped to 0x00000000" />
+        <map name="RAMD1" target="08000000" comment="RAMD1 remapped to 0x08000000" />
+        <map name="PERW1" target="A0000000" comment="PERW1 remapped at 0xA0000000" />
+        <map name="PERI" target="D0000000" comment="PERI shared with R7" />
+        <map name="RAMS" target="60000000" comment="RAMS shared with R7" />
+      </instance>
+
+      <extraXml name="Nested Vectored Interrupt Controller (M3)" xml="cortexM3_nvic.xml"/>
+      <extraXml name="Debug (M3)" xml="cortexM3_dbg.xml"/>
+      <extraXml name="System Control Space (M3)" xml="cortexM3_scs.xml"/>
+      <extraXml name="Data Watchpoint and Trace Unit (M3)" xml="cortexM3_dwt.xml"/>
+      <extraXml name="Flash Patch and Breakpoint Unit (M3)" xml="cortexM3_fpb.xml"/>
+      <extraXml name="Instrumentation Trace Macrocell (M3)" xml="cortexM3_itm.xml"/>
+      <extraXml name="Embedded Trace Macrocell (M3)" xml="cortexM3_etm.xml"/>
+    </cpu>
+
+    <cpu name="CortexM7" xml="cortexM7.xml">
+      <instance t32API="20003" t32GDB="30003" dev="/dev/mx_0_wpan_gdb" subsys="WPAN">
+        <!-- any required region mappings should go here (i.e. regions shared by some, but not all, cpu instances) -->
+      </instance>
+
+      <extraXml name="Nested Vectored Interrupt Controller (M7)" xml="cortexM7_nvic.xml"/>
+      <extraXml name="System Control Space (M7)" xml="cortexM7_scs.xml"/>
+      <extraXml name="Debug (M7)" xml="cortexM7_dbg.xml"/>
+      <extraXml name="Data Watchpoint and Trace Unit (M7)" xml="cortexM7_dwt.xml"/>
+      <extraXml name="Flash Patch and Breakpoint Unit (M7)" xml="cortexM7_fpb.xml"/>
+      <extraXml name="Instrumentation Trace Macrocell (M7)" xml="cortexM7_itm.xml"/>
+      <extraXml name="Memory Protection Unit (M7)" xml="cortexM7_mpu.xml"/>
+
+      <memory startAddr="00000000" endAddr="00023fff" name="ITCM (WPAN)" comment="144KB" />
+      <memory startAddr="00800000" endAddr="008fffff" name="DRAM remapped" comment="1MB" />
+      <memory startAddr="20000000" endAddr="2000ffff" name="DTCM (WPAN)" comment="64KB" />
+
+      <subsystem name="PERB" xml="perb_registers.xml" comment=""/>
+    </cpu>
+
+    <!-- Regions defined outside a cpu node are global (accessible by all cpus at the same address(es)) -->
+
+    <!-- Add subsystem elements for each shared mailbox -->
+    <subsystem name="AP mailbox" xml="mb_ap2wl_registers.xml"/>
+    <subsystem name="APM mailbox" xml="mb_apm2wlbt_registers.xml"/>
+    <subsystem name="Cellular mailbox" xml="mb_cp2wl_registers.xml"/>
+    <subsystem name="GNSS mailbox" xml="mb_gnss2wlbt_registers.xml"/>
+    <subsystem name="A-BOX mailbox" xml="mb_wlbt2abox_registers.xml"/>
+    <subsystem name="CHUB mailbox" xml="mb_wlbt2chub_registers.xml"/>
+
+    <subsystem name="PERT" xml="pert_registers.xml" comment=""/>
+
+    <memory startAddr="80000000" endAddr="807fffff" name="DRAM" comment="8MB" />
+  </target>
+
+  <rfchips zippy="4c000000"> <!-- the start address of the zippy_bb block -->
+    <!--
+       Override - if needed - the default offsets of zippy registers relative to the start address defined above.
+
+       Currently, the register offsets that can be overridden are listed below along
+       with the values that moredump will use by default if they are not overridden
+       (values are always expressed as non-prefixed hexadecimals):
+           addressControlRegOffset: defaults to 0
+           readDataRegOffset: 4
+           interruptEnableRegOffset: 34
+           interruptStatusRegOffset: 38
+           interruptClearRegOffset: 3c
+           apbStatusRegOffset: 40
+    -->
+    <zippy
+      addressControlRegOffset="10000"
+      readDataRegOffset="1000c"
+      interruptEnableRegOffset="28"
+      interruptStatusRegOffset="2c"
+      interruptClearRegOffset="30"
+      apbStatusRegOffset="34"
+    />
+    <rfchip name="hopper" idat="0000" chipid="B2" interface="zippy">
+      <version majorminor="01" xml="rf_chip_registers.xml" comment="S620 EVT0.1"/>
+    </rfchip>
+    <rfchip name="lark" idat="0000" chipid="B3" interface="zippy">
+      <version majorminor="01" xml="btwl_registers.xml" comment="S621 EVT0.1"/>
+      <version majorminor="10" xml="btwl_registers.xml" comment="S621P EVT0"/>
+      <version majorminor="11" xml="btwl_registers.xml" comment="S621P EVT0.1"/>
+   </rfchip>
+  </rfchips>
+</moredump4>

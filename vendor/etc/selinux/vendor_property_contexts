@@ -1,0 +1,257 @@
+#line 1 "out/soong/.intermediates/system/sepolicy/vendor_property_contexts/android_common/gen/namespace_checked/vendor/samsung/system/sepolicy/samsung/property_contexts"
+#_VENDOR_OR_ODM_NAMESPACES = [ 
+#             "ctl.odm.", 
+#             "ctl.vendor.", 
+#             "ctl.start$odm.", 
+#             "ctl.start$vendor.", 
+#             "ctl.stop$odm.", 
+#             "ctl.stop$vendor.", 
+#             "ro.boot.", 
+#             "ro.hardware.", 
+#             "ro.odm.", 
+#             "ro.vendor.", 
+#             "odm.", 
+#             "persist.odm.", 
+#             "persist.vendor.", 
+#             "vendor." 
+#     ]
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/O_treble_review_request/view/22616833
+vendor.sensor.                       u:object_r:vendor_sensor_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23332597
+persist.vendor.nfc.log.index                u:object_r:vendor_nfc_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23343491
+vendor.debug.egl.                                u:object_r:vendor_debug_egl_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23344749
+vendor.tzdaemon                u:object_r:vendor_tzdaemon_prop:s0
+vendor.secureos.               u:object_r:vendor_secureos_prop:s0
+vendor.tzts_daemon             u:object_r:vendor_tztsdaemon_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/O_review_request/view/22726878
+# vendor.vidc.enc. has been managed as system_prop by qualcomm
+# PROPERTY SUFFIX VOILATION vendor.vidc.enc.csc.enable             u:object_r:system_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/O_review_request/view/22963489
+# PROPERTY SUFFIX VOILATION persist.vendor.camera.feature.cac    u:object_r:sec_camera_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23365202/?page=1
+vendor.proxy_daemon             u:object_r:vendor_proxydaemon_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23344683
+vendor.wlandriver.             u:object_r:vendor_wlandriver_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23375973
+#vendor.omadm.                                 u:object_r:vendor_omadm_prop:s0
+persist.vendor.sys.spr_hfa_completed          u:object_r:vendor_omadm_prop:s0
+persist.vendor.sys.omadm_hfa_prl              u:object_r:vendor_omadm_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23402289
+vendor.nfc.fw.                                           u:object_r:vendor_nfc_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-849
+ro.vendor.camera.wrapper.hal3TrebleMinorVersion   u:object_r:vendor_camera_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1386
+vendor.ofi.rt_framework.dbgmask  u:object_r:vendor_ofi_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2443
+# PROPERTY PREFIX Voilation  hostapd.dbglevel                u:object_r:vendor_hostapd_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23610824/
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-631
+persist.vendor.members.                           u:object_r:vendor_members_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-633
+vendor.fips.bssl.post                           u:object_r:vendor_bssl_post_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-912
+# QCOM_DUPLICATED : vendor.fastrpc.                                 u:object_r:vendor_fastrpc_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1135
+ro.vendor.model_suffix                          u:object_r:vendor_model_suffix_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1210
+vendor.wlbtd.                       u:object_r:vendor_wlbtd_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4853
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1266
+vendor.npu.usr_drv.log_mask          u:object_r:vendor_sec_camera_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-752
+persist.vendor.zit.      		u:object_r:vendor_zygoteinit_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1510
+vendor.camera.motor.service                       u:object_r:vendor_camera_motor_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1875
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4857
+# VTS failure vts_treble_sys_prop_test
+vendor.dolby.                     u:object_r:vendor_dolby_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2802
+ro.vendor.radio.            u:object_r:vendor_radio_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2641 / SEANDROID-3540 / SEANDROID-4922
+# P201028-06841 vts_treble_sys_prop_test fix
+# SEC_REMOVED vendor.ro.security.vaultkeeper.        u:object_r:vendor_sec_vaultkeeper_prop:s0
+vendor.security.vaultkeeper.        u:object_r:vendor_sec_vaultkeeper_prop:s0
+ro.vendor.security.vaultkeeper.		u:object_r:vendor_sec_vaultkeeper_prop:s0
+vendor.security.cass.                       u:object_r:vendor_sec_cass_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2963
+ro.vendor.multisim.                       u:object_r:vendor_radio_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3079
+vendor.seHal.init                         u:object_r:vendor_sehal_init_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3193
+vendor.display.sf.                                    u:object_r:vendor_display_sf_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3222
+vendor.tmfd                    u:object_r:vendor_tmfd_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3467
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4887
+# P201028-06841 VTS fail vts_treble_sys_prop_test
+# SEC_REMVOED : vendor.sys.mobicoredaemon.      u:object_r:mobicore_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4342
+# Change from dynamic_system_prop to sec_audio_prop
+# NAME PREFIX VOILATION secmm.superslowmotion.               u:object_r:sec_audio_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4214
+persist.vendor.softdog              u:object_r:vendor_softdog_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4190
+persist.vendor.dumpstate.verbose_logging.enabled           u:object_r:vendor_dumpstate_config_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4299
+persist.vendor.uwb.log.index                               u:object_r:vendor_uwb_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4798
+ro.vendor.heimdalld.                                       u:object_r:vendor_heimdalld_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-5381
+vendor.ota.recovery.status                                    u:object_r:vendor_fota_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-769
+init.svc.vendor.drm-clearkey-hal-1-1			u:object_r:vendor_mediadrm_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4649
+init.svc.vendor.wvkprov_server_hal			u:object_r:vendor_wvkprov_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6114/6462
+ro.vendor.nfc.			u:object_r:vendor_sec_nfc_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6718
+vendor.gnss.psds                                           u:object_r:vendor_gnss_psds_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-7009
+vendor.thermal.amb.			u:object_r:vendor_thermal_test_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-7062
+vendor.ofi.dal.time						u:object_r:vendor_ofi_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-7108
+vendor.camera.unihal.enable   u:object_r:vendor_camera_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-8358
+persist.vendor.snaplite_cache_status_64				u:object_r:vendor_snap_cache_prop:s0
+persist.vendor.snaplite_cache_integrity_64			u:object_r:vendor_snap_cache_prop:s0
+
+#line 1 "out/soong/.intermediates/system/sepolicy/vendor_property_contexts/android_common/gen/namespace_checked/device/samsung/sepolicy/common/property_contexts"
+# for cbd
+persist.vendor.cbd.              u:object_r:vendor_rild_prop:s0
+vendor.cbd.                      u:object_r:vendor_rild_prop:s0
+
+# for camera hal
+persist.vendor.sys.camera.       u:object_r:vendor_camera_prop:s0
+persist.vendor.hifills.          u:object_r:vendor_camera_prop:s0
+persist.vendor.dualCam.          u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.           u:object_r:vendor_camera_prop:s0
+vendor.hal.camera.               u:object_r:vendor_camera_prop:s0
+
+# more vendor properties
+ro.vendor.ddk.set.afbc              u:object_r:vendor_default_prop:s0
+ro.vendor.wfdsupport              u:object_r:vendor_default_prop:s0
+ro.vendor.cscsupported  u:object_r:vendor_default_prop:s0
+vendor.sys.mobicoredaemon.enable  u:object_r:vendor_mobicoredaemon_prop:s0
+
+# for iwlan
+vendor.charon.                   u:object_r:vendor_ims_prop:s0
+vendor.pktrouter                 u:object_r:vendor_ims_prop:s0
+
+vendor.wlbtd.tar_files_per_trigger	u:object_r:vendor_wlbtd_prop:s0
+vendor.wlbtd.version			u:object_r:vendor_wlbtd_prop:s0
+vendor.wlbtd.board_id			u:object_r:vendor_wlbtd_prop:s0
+
+# for wland
+persist.vendor.wlbtlog.      u:object_r:vendor_wland_prop:s0
+vendor.wlbtlog.              u:object_r:vendor_wland_prop:s0
+vendor.sdcard.path.log       u:object_r:vendor_wland_prop:s0
+
+## HWC
+vendor.hwc.display.         u:object_r:vendor_hwc_prop:s0 
+vendor.hwc.exynos.          u:object_r:vendor_hwc_prop:s0
+
+# for gnss
+persist.vendor.gnsslog.              u:object_r:vendor_gnss_prop:s0
+vendor.exynos.gnsslog                u:object_r:vendor_gnss_prop:s0
+
+# for eden
+ro.vendor.eden.devices                 u:object_r:vendor_eden_prop:s0
+ro.vendor.eden.npu.version.path        u:object_r:vendor_eden_prop:s0
+
+# vendor default
+vendor.config.               u:object_r:vendor_config_default_prop:s0
+ro.vendor.config.            u:object_r:vendor_ro_config_default_prop:s0
+persist.vendor.config.       u:object_r:vendor_persist_config_default_prop:s0
+vendor.sys.                  u:object_r:vendor_sys_default_prop:s0
+ro.vendor.sys.               u:object_r:vendor_ro_sys_default_prop:s0
+persist.vendor.sys.          u:object_r:vendor_persist_sys_default_prop:s0
+
+# for c2 codec
+vendor.debug.c2.level    u:object_r:vendor_default_prop:s0
+
+
+# for usb
+persist.vendor.usb.	u:object_r:vendor_usb_config_prop:s0
+vendor.usb.		u:object_r:vendor_usb_config_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/vendor_property_contexts/android_common/gen/namespace_checked/vendor/samsung/system/sepolicy/BSP/slsi/common/property_contexts"
+##########################
+# property service keys
+#
+#
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23315013
+vendor.cbd.rfs_check_done                   u:object_r:vendor_rild_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23443555
+#vendor.cbd.                                 u:object_r:vendor_cbd_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23402289
+vendor.TEEGRIS.                             u:object_r:vendor_teegris_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2351
+vendor.wlan.driver.version       u:object_r:vendor_wifi_version:s0
+vendor.wlan.firmware.version     u:object_r:vendor_wifi_version:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2790
+vendor.teegris.							u:object_r:vendor_teegris_prop:s0
+
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-5033
+# for vendor second stage module loading ended prop 
+vendor.device.modules.ready      u:object_r:vendor_device_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-5102
+vendor.wlan.ramdump_mode  						u:object_r:vendor_wifi_ramdump_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6490
+vendor.audio.              u:object_r:vendor_audio_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-6488
+ro.vendor.wifi.sap.interface       u:object_r:vendor_wifi_prop:s0
+ro.vendor.wifi.sap.concurrent.iface 			u:object_r:vendor_wifi_prop:s0

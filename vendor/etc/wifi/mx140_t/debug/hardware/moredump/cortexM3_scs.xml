@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - System Control Space
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="System Control Space"
+              class="S">
+  <register addr="e000edf0" rw_flags="RW" width="4" name="SCS_DHCSR" comment="Debug Halting Control and Status Register"/>
+  <register addr="e000edf4" rw_flags="W" width="4" name="SCS_DCSR" comment="Debug Core Selector Register"/>
+  <register addr="e000edf8" rw_flags="RW" width="4" name="SCS_DCRDR" comment="Debug Core Register Data Register"/>
+  <register addr="e000edfc" rw_flags="RW" width="4" name="SCS_DEMCR" comment="Debug Exception and Monitor Control Register"/>
+  <block name="Coresight identification Registers">
+    <register addr="e000efd0" rw_flags="R" width="4" name="SCS_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e000efe0" rw_flags="R" width="4" name="SCS_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e000efe4" rw_flags="R" width="4" name="SCS_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e000efe8" rw_flags="R" width="4" name="SCS_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e000efec" rw_flags="R" width="4" name="SCS_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e000eff0" rw_flags="R" width="4" name="SCS_CID0" comment="Component Identification Register 0"/>
+    <register addr="e000eff4" rw_flags="R" width="4" name="SCS_CID1" comment="Component Identification Register 1"/>
+    <register addr="e000eff8" rw_flags="R" width="4" name="SCS_CID2" comment="Component Identification Register 2"/>
+    <register addr="e000effc" rw_flags="R" width="4" name="SCS_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

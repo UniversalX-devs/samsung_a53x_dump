@@ -1,0 +1,14 @@
+{ 
+	"sum":    { "batch":1,
+                             "channels":3,
+                             "computeunit":"gpu",
+                             "data_type":"float32",
+                             "encrypted":"false",
+                             "height":224,
+                             "model_file":"/vendor/bin/add.pb",
+                             "output":"output",
+                             "weight_file":"/vendor/bin/add.pb",
+                             "width":224,
+							 "delete":0}
+
+}

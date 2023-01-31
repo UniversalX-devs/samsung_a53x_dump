@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - Instrumentation Trace Macrocell Unit
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Instrumentation Trace Macrocell Unit"
+              class="S">
+  <register addr="e0000000" rw_flags="RW" width="4" name="ITM_STIM0" comment="Stimulus Port Register 0"/>
+  <register addr="e0000004" rw_flags="RW" width="4" name="ITM_STIM1" comment="Stimulus Port Register 1"/>
+  <register addr="e0000008" rw_flags="RW" width="4" name="ITM_STIM2" comment="Stimulus Port Register 2"/>
+  <register addr="e000000c" rw_flags="RW" width="4" name="ITM_STIM3" comment="Stimulus Port Register 3"/>
+  <register addr="e0000010" rw_flags="RW" width="4" name="ITM_STIM4" comment="Stimulus Port Register 4"/>
+  <register addr="e0000014" rw_flags="RW" width="4" name="ITM_STIM5" comment="Stimulus Port Register 5"/>
+  <register addr="e0000018" rw_flags="RW" width="4" name="ITM_STIM6" comment="Stimulus Port Register 6"/>
+  <register addr="e000001c" rw_flags="RW" width="4" name="ITM_STIM7" comment="Stimulus Port Register 7"/>
+  <register addr="e0000020" rw_flags="RW" width="4" name="ITM_STIM8" comment="Stimulus Port Register 8"/>
+  <register addr="e0000024" rw_flags="RW" width="4" name="ITM_STIM9" comment="Stimulus Port Register 9"/>
+  <register addr="e0000028" rw_flags="RW" width="4" name="ITM_STIM10" comment="Stimulus Port Register 10"/>
+  <register addr="e000002c" rw_flags="RW" width="4" name="ITM_STIM11" comment="Stimulus Port Register 11"/>
+  <register addr="e0000030" rw_flags="RW" width="4" name="ITM_STIM12" comment="Stimulus Port Register 12"/>
+  <register addr="e0000034" rw_flags="RW" width="4" name="ITM_STIM13" comment="Stimulus Port Register 13"/>
+  <register addr="e0000038" rw_flags="RW" width="4" name="ITM_STIM14" comment="Stimulus Port Register 14"/>
+  <register addr="e000003c" rw_flags="RW" width="4" name="ITM_STIM15" comment="Stimulus Port Register 15"/>
+  <register addr="e0000040" rw_flags="RW" width="4" name="ITM_STIM16" comment="Stimulus Port Register 16"/>
+  <register addr="e0000044" rw_flags="RW" width="4" name="ITM_STIM17" comment="Stimulus Port Register 17"/>
+  <register addr="e0000048" rw_flags="RW" width="4" name="ITM_STIM18" comment="Stimulus Port Register 18"/>
+  <register addr="e000004c" rw_flags="RW" width="4" name="ITM_STIM19" comment="Stimulus Port Register 19"/>
+  <register addr="e0000050" rw_flags="RW" width="4" name="ITM_STIM20" comment="Stimulus Port Register 20"/>
+  <register addr="e0000054" rw_flags="RW" width="4" name="ITM_STIM21" comment="Stimulus Port Register 21"/>
+  <register addr="e0000058" rw_flags="RW" width="4" name="ITM_STIM22" comment="Stimulus Port Register 22"/>
+  <register addr="e000005c" rw_flags="RW" width="4" name="ITM_STIM23" comment="Stimulus Port Register 23"/>
+  <register addr="e0000060" rw_flags="RW" width="4" name="ITM_STIM24" comment="Stimulus Port Register 24"/>
+  <register addr="e0000064" rw_flags="RW" width="4" name="ITM_STIM25" comment="Stimulus Port Register 25"/>
+  <register addr="e0000068" rw_flags="RW" width="4" name="ITM_STIM26" comment="Stimulus Port Register 26"/>
+  <register addr="e000006c" rw_flags="RW" width="4" name="ITM_STIM27" comment="Stimulus Port Register 27"/>
+  <register addr="e0000070" rw_flags="RW" width="4" name="ITM_STIM28" comment="Stimulus Port Register 28"/>
+  <register addr="e0000074" rw_flags="RW" width="4" name="ITM_STIM29" comment="Stimulus Port Register 29"/>
+  <register addr="e0000078" rw_flags="RW" width="4" name="ITM_STIM30" comment="Stimulus Port Register 30"/>
+  <register addr="e000007c" rw_flags="RW" width="4" name="ITM_STIM31" comment="Stimulus Port Register 31"/>
+  <register addr="e0000e00" rw_flags="RW" width="4" name="ITM_TER" comment="Trace Enable Register"/>
+  <register addr="e0000e40" rw_flags="RW" width="4" name="ITM_TPR" comment="Trace Privilege Register"/>
+  <register addr="e0000e80" rw_flags="RW" width="4" name="ITM_TCR" comment="Trace Control Register"/>
+  <block name="Coresight Management Registers">
+    <register addr="e0000fd0" rw_flags="R" width="4" name="ITM_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e0000fd4" rw_flags="R" width="4" name="ITM_PID5" comment="Peripheral Identification Register 5"/>
+    <register addr="e0000fd8" rw_flags="R" width="4" name="ITM_PID6" comment="Peripheral Identification Register 6"/>
+    <register addr="e0000fdc" rw_flags="R" width="4" name="ITM_PID7" comment="Peripheral Identification Register 7"/>
+    <register addr="e0000fe0" rw_flags="R" width="4" name="ITM_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e0000fe4" rw_flags="R" width="4" name="ITM_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e0000fe8" rw_flags="R" width="4" name="ITM_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e0000fec" rw_flags="R" width="4" name="ITM_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e0000ff0" rw_flags="R" width="4" name="ITM_CID0" comment="Component Identification Register 0"/>
+    <register addr="e0000ff4" rw_flags="R" width="4" name="ITM_CID1" comment="Component Identification Register 1"/>
+    <register addr="e0000ff8" rw_flags="R" width="4" name="ITM_CID2" comment="Component Identification Register 2"/>
+    <register addr="e0000ffc" rw_flags="R" width="4" name="ITM_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

@@ -1,0 +1,4 @@
+service exynosaudiodump_service /vendor/bin/hw/vendor.samsung_slsi.hardware.audio_dump@1.0-service
+    class hal
+    user system
+    group system
