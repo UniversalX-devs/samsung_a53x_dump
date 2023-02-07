@@ -1,0 +1,14 @@
+#service sbm /system/bin/sbm
+#    class core
+#    user tobeadded
+#    group tobeadded
+#    oneshot   should not come again???
+#    seclabel u:r:init:s0
+
+
+service sbm_c /system/bin/sbm -c
+    class sec-charger
+    user root
+    group system readproc
+#    oneshot   should not come again???
+    seclabel u:r:sbm:s0

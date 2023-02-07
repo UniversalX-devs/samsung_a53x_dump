@@ -1,0 +1,5 @@
+service apexserver /system/bin/apexserver
+    class main
+    user system
+    group system graphics drmrpc media media_rw vendor_secdir
+    disabled

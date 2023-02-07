@@ -1,0 +1,4 @@
+ <permissions>
+        <privapp-permissions package="com.samsung.cmfa.AuthTouch">
+        </privapp-permissions>
+ </permissions>

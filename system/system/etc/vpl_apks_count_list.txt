@@ -1,0 +1,2 @@
+/system/preload/Tips/Tips.apk
+/system/preload/Facebook_stub_preload/Facebook_stub_preload.apk

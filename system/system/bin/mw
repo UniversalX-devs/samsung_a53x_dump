@@ -1,0 +1,6 @@
+#!/system/bin/sh
+#script to run shell command for multiwindow
+#
+base=/system
+export CLASSPATH=$base/framework/mw.jar
+exec app_process $base/bin com.android.commands.mw.MultiWindowCmd "$@"

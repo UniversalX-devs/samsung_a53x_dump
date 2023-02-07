@@ -1,0 +1,26 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_ext.brand=samsung
+ro.product.system_ext.device=essi
+ro.product.system_ext.manufacturer=samsung
+ro.product.system_ext.model=SM-A536B
+ro.product.system_ext.name=a53xnaxx
+ro.system_ext.build.date=Mon Jan  9 11:00:16 KST 2023
+ro.system_ext.build.date.utc=1673229616
+ro.system_ext.build.fingerprint=samsung/a53xnaxx/essi:13/TP1A.220624.014/A536BXXS4BWA2:user/release-keys
+ro.system_ext.build.id=TP1A.220624.014
+ro.system_ext.build.tags=release-keys
+ro.system_ext.build.type=user
+ro.system_ext.build.version.incremental=A536BXXS4BWA2
+ro.system_ext.build.version.release=13
+ro.system_ext.build.version.release_or_codename=13
+ro.system_ext.build.version.sdk=33
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+# Auto-added by post_process_props.py
+persist.sys.usb.config=mtp
+# end of file
+

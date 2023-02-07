@@ -1,0 +1,220 @@
+<!--
+    type 1 : AccessibilityService
+    type 2 : Accessibility settings
+    type 3 : not Accessibility settings (ex. One-handed mode, blue_light_filter)
+
+    task list :
+        talkback_se
+        talkback
+        universal_switch
+        assistant_menu
+        sound_detector
+        doorbell_detector
+        interaction_control
+        mute_all_sound
+        palm_motion
+        air_motion_wake_up
+        air_motion_engine
+        one_handed_mode
+        magnification_shortcut
+        remove_animation
+        edge_feed
+        color_blind
+        color_lens
+        blue_light_filter
+        click_after_pointer_stops
+	action_after_pointer_stops
+        corner_action
+        tap_duration
+        ignore_repeated_touches
+        one_handed_mode_activated
+
+-->
+
+
+<task-list>
+    <task name="talkback_se"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback,universal_switch,assistant_menu,sound_detector,doorbell_detector,
+                    interaction_control,mute_all_sound,
+                    air_motion_wake_up,air_motion_engine,one_handed_mode,tap_duration,ignore_repeated_touches"
+        needNotify="1" />
+
+    <task name="talkback"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback_se,universal_switch,assistant_menu,sound_detector,doorbell_detector,
+                    interaction_control,mute_all_sound,
+                    air_motion_wake_up,air_motion_engine,one_handed_mode,tap_duration,ignore_repeated_touches"
+        needNotify="0" />
+
+    <task name="universal_switch"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback,talkback_se,assistant_menu,interaction_control,
+                    remove_animation,palm_motion,air_motion_wake_up,
+                    air_motion_engine,one_handed_mode,edge_feed,magnification_shortcut"
+        needNotify="0" />
+
+    <task name="assistant_menu"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback,talkback_se,universal_switch,interaction_control,one_handed_mode"
+        needNotify="0" />
+
+    <task name="sound_detector"
+        type="2"
+        key="system/sound_detector"
+        exclusive="talkback,talkback_se"
+        needNotify="0" />
+
+    <task name="doorbell_detector"
+        type="2"
+        key="system/doorbell_detector"
+        exclusive="talkback,talkback_se"
+        needNotify="0" />
+
+    <task name="interaction_control"
+        type="2"
+        key="system/access_control_enabled"
+        exclusive="talkback,talkback_se,universal_switch,assistant_menu,magnification_shortcut,
+                    easy_mute,one_handed_mode,smart_alert,direct_call,palm_motion"
+        needNotify="0" />
+
+    <task name="color_blind"
+        type="2"
+        key="system/color_blind"
+        exclusive="color_lens,blue_light_filter"
+        needNotify="0" />
+
+    <task name="color_lens"
+        type="2"
+        key="secure/color_lens_switch"
+        exclusive="color_blind,blue_light_filter"
+        needNotify="0" />
+
+    <task name="magnification_shortcut"
+        type="2"
+        key="secure/accessibility_magnification_shortcut"
+        exclusive="interaction_control,one_handed_mode,universal_switch"
+        needNotify="0" />
+
+    <task name="mute_all_sound"
+        type="2"
+        key="global/all_sound_off"
+        exclusive="talkback,talkback_se"
+        needNotify="0" />
+
+    <task name="click_after_pointer_stops"
+        type="2"
+        key="secure/accessibility_autoclick_enabled"
+        exclusive="one_handed_mode"
+        needNotify="0" />
+
+    <task name="action_after_pointer_stops"
+        type="2"
+        key="secure/accessibility_auto_action_type"
+        exclusive="one_handed_mode"
+        needNotify="0" />
+
+    <task name="corner_action"
+        type="2"
+        key="secure/accessibility_corner_action_enabled"
+        exclusive="one_handed_mode"
+        needNotify="0" />
+
+    <task name="tap_duration"
+        type="2"
+        key="secure/tap_duration_enabled"
+        exclusive="one_handed_mode,talkback_se"
+        needNotify="1" />
+
+    <task name="ignore_repeated_touches"
+        type="2"
+        key="secure/touch_blocking_enabled"
+        exclusive="one_handed_mode,talkback_se"
+        needNotify="0" />
+
+    <task name="sticky_keys"
+        type="2"
+        key="secure/sticky_keys_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="slow_keys"
+        type="2"
+        key="secure/slow_keys_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="bounce_keys"
+        type="2"
+        key="secure/bounce_keys_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="remove_animation"
+        type="2"
+        key="system/remove_animations"
+        exclusive="universal_switch"
+        needNotify="0" />
+
+    <task name="air_motion_wake_up"
+          type="3"
+          key="system/air_motion_wake_up"
+          exclusive="talkback_se,talkback,universal_switch"
+          needNotify="0" />
+
+    <task name="air_motion_engine"
+          type="3"
+          key="system/air_motion_engine"
+          exclusive="talkback_se,talkback,universal_switch"
+          needNotify="0" />
+
+    <task name="blue_light_filter"
+          type="3"
+          key="system/blue_light_filter"
+          exclusive="color_blind,color_lens"
+          needNotify="0" />
+
+    <task name="edge_feed"
+          type="3"
+          key="system/edge_information_stream"
+          exclusive="universal_switch"
+          needNotify="0" />
+
+    <task name="easy_mute"
+          type="3"
+          key="system/motion_overturn"
+          exclusive="interaction_control"
+          needNotify="0" />
+
+    <task name="one_handed_mode"
+          type="3"
+          key="system/any_screen_enabled"
+          exclusive="talkback_se,talkback,universal_switch,interaction_control,magnification_shortcut,
+                    click_after_pointer_stops,action_after_pointer_stops,tap_duration,
+                    ignore_repeated_touches,sticky_keys,slow_keys,bounce_keys,assistant_menu,corner_action"
+          needNotify="0" />
+
+    <task name="palm_motion"
+          type="3"
+          key="system/surface_palm_swipe"
+          exclusive="universal_switch,interaction_control"
+          needNotify="0" />
+
+    <task name="smart_alert"
+        type="3"
+        key="system/motion_pick_up"
+        exclusive="interaction_control"
+        needNotify="0" />
+
+    <task name="direct_call"
+        type="3"
+        key="system/motion_pick_up_to_call_out"
+        exclusive="interaction_control"
+        needNotify="0" />
+
+</task-list>
+

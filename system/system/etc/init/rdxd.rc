@@ -1,0 +1,23 @@
+service rdxd /system/bin/rdxd
+    class late_start
+    capabilities SYS_ADMIN
+    user root
+    group system
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start rdxd
+
+on post-fs-data
+    mkdir /data/rdx_dump 0775 root system encryption=Attempt
+
+on property:sys.rdxd.erase_all=1
+    rmdir /data/rdx_dump
+
+on property:sys.rdxd.create=1
+    mkdir /data/rdx_dump 0775 root system encryption=DeleteIfNecessary
+
+on property:sys.rdxd.create=2
+    mkdir /data/rdx_dump 0775 root system encryption=None
+

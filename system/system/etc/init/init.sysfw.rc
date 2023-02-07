@@ -1,0 +1,81 @@
+on init
+    softdog init
+    softdog settimeout 100  # including enable
+    softdog chmod 0660
+    softdog chown root system
+
+on post-fs
+    # set product_name and fingerprint for eea
+    # after /efs is mounted
+    reload_props_for_eea
+
+on post-fs-data
+    mkdir /data/log 0775 system log encryption=DeleteIfNecessary
+    mkdir /data/log/batterystats 0750 system log
+    mkdir /data/log/ewlogd 0755 system system
+    # //[@ SPEG solution
+    mkdir /data/misc/speg 0770 system audio
+    # //]
+    mkdir /data/apex_repair 0775 system system
+
+on early-init
+    tune_heap
+
+on post-fs-data && property:ro.boot.debug_level=0x4f4c  # low
+    mkdir /data/log/core 0775 system log
+on post-fs-data && property:ro.boot.debug_level=0x494d  # mid
+    mkdir /data/log/core 0777 system log
+on post-fs-data && property:ro.boot.debug_level=0x4948  # high
+    mkdir /data/log/core 0777 system log
+    setprop persist.systemserver.sa_bindertracker true
+
+on property:persist.systemserver.sa_bindertracker=true && property:ro.boot.debug_level=0x494d
+    setprop persist.systemserver.sa_bindertracker false
+on property:persist.systemserver.sa_bindertracker=true && property:ro.boot.debug_level=0x4f4c
+    setprop persist.systemserver.sa_bindertracker false
+
+
+# set debug.enable as true except for user/low/ship
+on early-init && property:ro.build.type=userdebug       # userdebug
+    setprop debug.enable true
+on early-init && property:ro.build.type=eng             # eng
+    setprop debug.enable true
+on early-init && property:ro.boot.debug_level=0x494d    # mid
+    setprop debug.enable true
+    setprop libc.debug.pthread.lock_owner 1
+on early-init && property:ro.boot.debug_level=0x4948    # high
+    setprop debug.enable true
+    setprop libc.debug.pthread.lock_owner 1
+on early-init && property:ro.product_ship=false         # noship
+    setprop debug.enable true
+on early-init && property:ro.boot.force_upload=0x5
+    setprop debug.enable true
+
+on load_persist_props_action
+    rescueparty
+
+on property:debug.trigger.nt_mode=true && property:ro.boot.debug_level=0x494d
+    setprop persist.trigger.nt_mode true
+on property:debug.trigger.nt_mode=false && property:persist.trigger.nt_mode=true
+    setprop persist.trigger.nt_mode false
+
+on property:ro.bootmode=charger               # LPM
+    setprop persist.vendor.softdog off
+on property:ro.boot.verifiedbootstate=orange  # GSI/GKI
+    setprop persist.vendor.softdog off
+
+on property:persist.vendor.softdog=off
+    softdog disable
+
+on property:sys.boot.is_upgrade=1
+    rescueparty fota
+
+on property:sys.boot.is_upgrade=1 && property:persist.sys.rescue_mode=isrb_off
+    setprop persist.sys.rescue_mode ""
+    setprop persist.sys.enable_isrb false
+    setprop persist.sys.rescue_level 0
+
+on property:sys.boot.is_upgrade=1 && property:persist.sys.rescue_mode=isrb_boot
+    setprop persist.sys.rescue_mode ""
+    setprop persist.sys.enable_isrb false
+    setprop persist.sys.rescue_level 0

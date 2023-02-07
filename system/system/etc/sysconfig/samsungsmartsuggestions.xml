@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.providers.contacts" />
+    <allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.providers.media" />
+    <allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.providers.telephony" />
+    <allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.scs" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.google.android.providers.media.module" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.providers.media" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.phone" />
+	<!-- Calendar -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.providers.calendar" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.app.myfiles" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.daemonapp" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.providers.contacts" />
+	<!-- Samsung Notes -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.notes" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.cmh" />
+    <allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.rubin.app" />
+    <!-- Messages -->
+    <allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.messaging" />
+    <allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.settings" />
+    <!-- Reminder -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.reminder" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.app.clockpackage" />
+	<!-- Samsung Internet -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.app.sbrowser" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.app.sbrowser.beta" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.scloud" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.contacts" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.calendar" />		
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.chrome" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.bookmarkprovider" />		
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.providers.settings" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.email.provider" />
+	<!-- Gallery -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.gallery3d" />
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.widget.pictureframe" />	
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.android.providers.media.module" />
+
+	<!-- Samsung Capture -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.smartcapture" />
+	<!-- Home launcher-->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.sec.android.app.launcher" />
+	<!-- Keyboard -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.honeyboard" />
+	<!-- SSS test -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.enhance" />
+	<!-- Open Source page using Web View -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.google.android.webview" />
+	<!-- Battery suggestion widget - Watch manager  -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.watchmanager" />
+	<!-- Samsung Common Policy Manager - SCPM  -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.scpm" />
+	<!-- Tips  -->
+	<allow-association target="com.samsung.android.smartsuggestions" allowed="com.samsung.android.app.tips" />
+</config>

@@ -1,0 +1,10 @@
+on boot
+    # barnswallow Daemon socket
+    mkdir /dev/socket/bsd 0770 system system
+
+# barnswallow daemon
+service bsd /system/bin/bsd
+    class main
+    user system
+    group system
+    disabled

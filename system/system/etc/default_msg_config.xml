@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<DefaultMsgConfig>
+	<!-- List up All Open CSC-->
+	<!-- 000000 : All should be set to AM -->
+	<!-- 111111 : All should be set to SM -->
+	<!-- mccmnc : only the listed mccmnc should be set to SM -->	
+	<Open>
+		<ACR>000000</ACR>
+		<AFG>000000</AFG>
+		<AFR>000000</AFR>
+		<ARO>000000</ARO>
+		<ATO>000000</ATO>
+		<BGL>000000</BGL>
+		<BKD>000000</BKD>
+		<BNG>000000</BNG>
+		<BRI>000000</BRI>
+		<BTC>000000</BTC>
+		<BTU>000000</BTU>
+		<BVO>000000</BVO>
+		<CAC>000000</CAC>
+		<CAL>000000</CAL>
+		<CAM>000000</CAM>
+		<CAU>000000</CAU>
+		<CHO>000000</CHO>
+		<COO>000000</COO>
+		<DBT>000000</DBT>
+		<DKR>000000</DKR>
+		<ECT>000000</ECT>		
+		<EGY>000000</EGY>
+		<EON>000000</EON>
+		<EUR>000000</EUR>
+		<FWD>000000</FWD>
+		<GTO>000000</GTO>
+		<ILO>000000</ILO>
+		<ILP>000000</ILP>
+		<INS>000000</INS>
+		<INU>000000</INU>
+		<ITV>000000</ITV>	
+		<KSA>000000</KSA>
+		<LAO>000000</LAO>
+		<LUX>000000</LUX>
+		<LYS>000000</LYS>
+		<MID>000000</MID>
+		<MWD>000000</MWD>
+		<MXO>000000</MXO>
+		<MYM>000000</MYM>
+		<NPB>000000</NPB>
+		<NPL>000000</NPL>
+		<ORX>000000</ORX>
+		<PAK>000000</PAK>
+		<PEO>000000</PEO>
+		<PHE>000000</PHE>
+		<ROM>000000</ROM>
+		<SEB>000000</SEB>
+		<SEE>000000</SEE>
+		<SEK>000000</SEK>
+		<SIO>000000</SIO>
+		<SKZ>000000</SKZ>
+		<SLI>000000</SLI>
+		<SLK>000000</SLK>
+		<SRR>000000</SRR>
+		<TGY>000000</TGY>
+		<THL>000000</THL>
+		<TKD>000000</TKD>
+		<TPA>000000</TPA>
+		<TPH>000000</TPH>
+		<TTT>000000</TTT>
+		<TUN>000000</TUN>		
+		<TUR>000000</TUR>
+		<UPO>000000</UPO>
+		<UYO>000000</UYO>
+		<XEF>000000</XEF>
+		<XEH>000000</XEH>
+		<XEZ>000000</XEZ>
+		<XFA>000000</XFA>
+		<XFE>000000</XFE>
+		<XID>000000</XID>
+		<XME>000000</XME>
+		<XNF>000000</XNF>
+		<XNZ>000000</XNZ>
+		<XSA>000000</XSA>		
+		<XSK>000000</XSK>
+		<XTC>000000</XTC>
+		<XXV>000000</XXV>
+		<ZTO>000000</ZTO>
+		
+		<XSP>111111</XSP>				
+		<AUT>22801,29501</AUT>		
+		<NEE>24201,23802,24008,24403,24412</NEE>	
+		<PHN>20408</PHN>
+		<SER>SM,25001</SER>
+		<XEO>26001,26006</XEO>
+		<XSG>42402</XSG>
+	</Open>
+	
+	<!-- List up Carrier CSC that should be set to SM -->
+	<Carrier>
+		<SM>SWC,PLS,PRT,SIN,STH,MM1</SM>
+	</Carrier>
+	
+	<Change>
+		<FIRST_API_LEVEL_30>SM_SWC,PLS,PRT,O2U,SIN,STH,MM1,PCT,XEC,TEL,TLP|BTU_23410|PHE_21407</FIRST_API_LEVEL_30>
+	</Change>
+
+</DefaultMsgConfig>

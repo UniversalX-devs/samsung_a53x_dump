@@ -1,0 +1,12 @@
+{
+  "baseTune": "palette",
+  "version": "2",
+  "set_iso_min": 0,
+  "set_iso_max": 100,
+  "set_bv_th": -3.5,
+  "set_bv_min": 0.5,
+  "set_bv_max": 1.6,
+  "set_face_count": 1,
+  "set_mode": "auto",
+  "set_level": 8
+}

@@ -1,0 +1,1 @@
+libhal.wsm.samsung.so

@@ -1,0 +1,4 @@
+# Samsung font
+on post-fs-data
+    mkdir /data/app_fonts 0775 system system
+# Samsung font

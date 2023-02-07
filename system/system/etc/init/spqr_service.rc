@@ -1,0 +1,15 @@
+#
+# Copyright (C) 2021 Samsung Electronics
+#
+# This software is the confidential and proprietary information
+# of Samsung Electronics, Inc. ("Confidential Information").  You
+# shall not disclose such Confidential Information and shall use
+# it only in accordance with the terms of the license agreement
+# you entered into with Samsung Electronics.
+
+service spqr_service /system/bin/spqr_service
+    class main
+    user system
+    group system
+    # Allow changing uid/gid for spqr proccess.
+    capabilities SETGID SETUID FOWNER

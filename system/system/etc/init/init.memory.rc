@@ -1,0 +1,28 @@
+
+# Note : this file won't be included in GSI
+
+on boot
+    write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/watermark_boost_factor 0
+
+    chown root system /sys/block/zram0/writeback_limit
+    chmod 0664 /sys/block/zram0/writeback_limit
+    chown root system /sys/block/zram0/bd_stat
+    chmod 0664 /sys/block/zram0/bd_stat
+
+    # am_app_launch
+    chmod 0664 /sys/kernel/mm/vmscan/am_app_launch
+    chown system system /sys/kernel/mm/vmscan/am_app_launch
+
+# Pageboostd
+on property:sys.boot_completed=1
+    mkdir /data/misc/pageboost 0771 system system
+
+# HeimdAll
+on early-init
+    chmod 0777 /dev/memcg
+    chown system system /dev/memcg
+    chown system system /dev/memcg/cgroup.procs
+
+on post-fs-data
+    mkdir /data/heimdall 0770 system system 

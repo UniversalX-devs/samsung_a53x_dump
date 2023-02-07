@@ -1,0 +1,6 @@
+# Samsung Pass Authenticator Service
+on post-fs-data
+    migrate_samsungpass_data
+    mkdir /data/vendor/samsungpass 0700 system system
+    mkdir /data/.fido 0700 system system encryption=Require
+# Samsung Pass Authenticator Service

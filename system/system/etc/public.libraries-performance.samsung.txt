@@ -1,0 +1,2 @@
+# Put library's name only
+libperfsdk.performance.samsung.so

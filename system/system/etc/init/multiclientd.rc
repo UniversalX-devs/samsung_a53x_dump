@@ -1,0 +1,11 @@
+service multiclient-daemon /system/bin/multiclientd -s ${ro.multisim.simslotcount}
+    class main
+    disabled
+    user radio
+    group radio cache inet misc log readproc sdcard_rw
+
+on property:ro.multisim.simslotcount=1 && property:ril.halservice.registered.slot1=true
+   start multiclient-daemon
+
+on property:ro.multisim.simslotcount=2 && property:ril.halservice.registered.slot2=true
+   start multiclient-daemon

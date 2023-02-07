@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VERSION value="20220916"/>
+<LIST>
+    <TARGET value="SM-A325N">
+        <DEVICE name="NA"/>
+    </TARGET>
+    <TARGET value="SM-A536N">
+        <DEVICE name="NA"/>
+    </TARGET>
+    <CERTTARGET value="ALL">
+        <DEVICE name="NA"/>
+    </CERTTARGET>
+    <ZIPTARGET value="ALL">
+        <DEVICE name="NA"/>
+    </ZIPTARGET>
+    <ZIPCERTTARGET value="ALL">
+        <DEVICE name="NA"/>
+    </ZIPCERTTARGET>
+</LIST>

@@ -1,0 +1,7 @@
+service dsms_service /system/bin/vendor.samsung.frameworks.security.dsms@1.0-service
+    interface vendor.samsung.frameworks.security.dsms@1.0::ISehDsms default
+    class hal
+    oneshot
+    disabled
+    user dsms
+    group dsms

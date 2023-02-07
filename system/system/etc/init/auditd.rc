@@ -1,0 +1,9 @@
+service auditd /system/bin/auditd -k
+    class main
+    user vendor_audit
+    group vendor_audit system package_info
+    capabilities AUDIT_CONTROL SYSLOG
+    seclabel u:r:auditd:s0
+    disabled
+    oneshot
+

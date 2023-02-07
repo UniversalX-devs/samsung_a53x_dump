@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<VERSION value="20180123"/>
+<TRUSTEDSTORE>
+    <STORE name="com.sec.android.preloadinstaller">
+	<DUMMY value="0"/>
+    </STORE>
+    <STORE name="com.samsung.android.seinstaller">
+        <DUMMY value="0"/>
+    </STORE>
+	<STORE name="PrePackageInstaller">
+        <DUMMY value="0"/>
+    </STORE>
+</TRUSTEDSTORE>
+

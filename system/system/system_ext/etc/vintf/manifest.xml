@@ -1,0 +1,15 @@
+<!--
+    Input:
+        system_ext_manifest.default.xml
+-->
+<manifest version="5.0" type="framework">
+    <vendor-ndk>
+        <version>33</version>
+    </vendor-ndk>
+    <vendor-ndk>
+        <version>30</version>
+    </vendor-ndk>
+    <vendor-ndk>
+        <version>31</version>
+    </vendor-ndk>
+</manifest>

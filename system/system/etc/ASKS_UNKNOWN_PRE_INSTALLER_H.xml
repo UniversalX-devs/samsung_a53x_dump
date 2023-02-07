@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VERSION value="20220831"/>
+<LIST>
+    <package value="ad4666ba7408e92b9e388f89856eb409f007934fac724e3d35a161207f357ea1">
+        <CERT name="ALL"/>
+    </package>
+    <package value="2cc4d029ad24cfdd31e8bd1bcb2a83fe91df744b9b17490f407c223ab99b1ddf">
+        <CERT name="ALL"/>
+    </package>
+    <package value="080097c2a5e2e7fdc4e4bebbe4ed387ef9c6ddbc8ba6c2daafd0cac77b0c2476">
+        <CERT name="ALL"/>
+    </package>
+</LIST>

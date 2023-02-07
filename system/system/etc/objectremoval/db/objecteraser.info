@@ -1,0 +1,10 @@
+{
+  "version": "5.0",
+  "framework": "tflite",
+  "precision": "float16",
+  "runtime": "gpu",
+  "org_model_name": "v13-v15-0708-15832-512-c3.tflite",
+  "model_path": [
+    "/system/etc/objectremoval/db/objecteraser.tflite"
+  ]
+}

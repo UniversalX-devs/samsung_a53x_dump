@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packagelist>
+    <!-- For Non EEA -->
+    <carrier name="eea" reverse="true">
+        <!-- Skip to scan below apks in Non EEA -->
+        <apk name="SearchSelector.apk" />
+    </carrier>
+</packagelist>
