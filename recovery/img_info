@@ -1,0 +1,17 @@
+kernel=kernel
+ramdisk=ramdisk
+page_size=4096
+dtbo=dtbo.img
+dt=dtb.img
+kernel_size=33626624
+ramdisk_size=37915212
+dtb_offset=0x00000000
+dtb_size=231748
+base_addr=0x10000000
+kernel_offset=0x00008000
+ramdisk_offset=0x00000000
+tags_offset=0x00000000
+dtbo_offset=0xf443c000
+cmd_line='bootconfig buildtime_bootconfig=enable loop.max_part=7'
+board="SRPUJ28A004"
+format=lz4
