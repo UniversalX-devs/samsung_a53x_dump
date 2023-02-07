@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - Flash Patch/Breakpoint Unit
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Flash Patch and Breakpoint Unit"
+              class="S">
+  <register addr="e0002000" rw_flags="RW" width="4" name="FPB_CTRL" comment="Flash Patch Control Register"/>
+  <register addr="e0002004" rw_flags="RW" width="4" name="FPB_REMAP" comment="Flash Patch Remap Register"/>
+  <register addr="e0002008" rw_flags="RW" width="4" name="FPB_COMP0" comment="Flash Patch Comparator Register 0"/>
+  <register addr="e000200c" rw_flags="RW" width="4" name="FPB_COMP1" comment="Flash Patch Comparator Register 1"/>
+  <register addr="e0002010" rw_flags="RW" width="4" name="FPB_COMP2" comment="Flash Patch Comparator Register 2"/>
+  <register addr="e0002014" rw_flags="RW" width="4" name="FPB_COMP3" comment="Flash Patch Comparator Register 3"/>
+  <register addr="e0002018" rw_flags="RW" width="4" name="FPB_COMP4" comment="Flash Patch Comparator Register 4"/>
+  <register addr="e000201c" rw_flags="RW" width="4" name="FPB_COMP5" comment="Flash Patch Comparator Register 5"/>
+  <register addr="e0002020" rw_flags="RW" width="4" name="FPB_COMP6" comment="Flash Patch Comparator Register 6"/>
+  <register addr="e0002024" rw_flags="RW" width="4" name="FPB_COMP7" comment="Flash Patch Comparator Register 7"/>
+  <block name="Coresight Management Registers">
+    <register addr="e0002fd0" rw_flags="R" width="4" name="FPB_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e0002fd4" rw_flags="R" width="4" name="FPB_PID5" comment="Peripheral Identification Register 5"/>
+    <register addr="e0002fd8" rw_flags="R" width="4" name="FPB_PID6" comment="Peripheral Identification Register 6"/>
+    <register addr="e0002fdc" rw_flags="R" width="4" name="FPB_PID7" comment="Peripheral Identification Register 7"/>
+    <register addr="e0002fe0" rw_flags="R" width="4" name="FPB_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e0002fe4" rw_flags="R" width="4" name="FPB_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e0002fe8" rw_flags="R" width="4" name="FPB_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e0002fec" rw_flags="R" width="4" name="FPB_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e0002ff0" rw_flags="R" width="4" name="FPB_CID0" comment="Component Identification Register 0"/>
+    <register addr="e0002ff4" rw_flags="R" width="4" name="FPB_CID1" comment="Component Identification Register 1"/>
+    <register addr="e0002ff8" rw_flags="R" width="4" name="FPB_CID2" comment="Component Identification Register 2"/>
+    <register addr="e0002ffc" rw_flags="R" width="4" name="FPB_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

@@ -1,0 +1,4 @@
+on init
+# TEEGRIS TUI LL property
+    setprop vendor.TEEGRIS.TUILL true
+

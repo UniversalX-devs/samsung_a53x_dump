@@ -1,0 +1,11 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.samsung_slsi.hardware.eden_runtime</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IEdenruntime</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

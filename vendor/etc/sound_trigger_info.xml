@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sound Trigger Hal Information.
+     It should be modified based on VTS firmware specification -->
+<!-- You can find how to parse xml in st_xml_parser.c -->
+<sound_trigger_info>
+    <common_info>
+        <config name="concurrent_capture" value="false" />
+        <config name="num_sound_model" value="2" />
+        <config name="num_supported_mic" value="1" />
+        <config name="sysclk_div" value="4" />
+    </common_info>
+    <sound_model_info>
+        <!-- id must be unique and same with firmware's trigger id -->
+        <!-- bitmask: 0x1, 0x2, 0x4, 0x8, ... -->
+        <sound_model id="1" bitmask="0x1">
+            <config name="name" value="bixby" />
+            <config name="vendor_uuid" value="0x1817de20,0xfa3b,0x11e5,0xbef2,0x00,0x02,0xa5,0xd5,0xc5,0x1b" />
+            <config name="backlog_ms" value="1800" />
+            <config name="sm_max_size" value="0x8300" />
+            <config name="mem_offset" value="0x4c000" />
+            <config name="support_odm_function" value="true" />
+        </sound_model>
+        <sound_model id="2" bitmask="0x2">
+            <config name="name" value="google" />
+            <config name="vendor_uuid" value="0x7038ddc8,0x30f2,0x11e6,0xb0ac,0x40,0xa8,0xf0,0x3d,0x3f,0x15" />
+            <config name="backlog_ms" value="2000" />
+            <config name="sm_max_size" value="0x10800" />
+            <config name="mem_offset" value="0x54300" />
+            <config name="support_odm_function" value="false" />
+        </sound_model>
+    </sound_model_info>
+    <mic_configuration>
+        <main_mic cnt="9">
+            <config name="VTS DMIC SEL" value="0" />
+            <config name="VTS DMIC IF RCH EN" value="1" />
+            <config name="VTS DMIC IF LCH EN" value="1" />
+            <config name="VTS Virtual Output Mux" value="1" />
+            <config name="VTS GAIN" value="0" />
+            <config name="VTS 1DB GAIN" value="2" />
+            <config name="VTS SYS SEL" value="1" />
+            <config name="VTS HPF EN" value="1" />
+            <config name="VTS HPF SEL" value="1" />
+        </main_mic>
+        <headset_mic cnt="10">
+            <config name="AUXPDM1 Rate" value="3" />
+            <config name="AUXPDM1 Input" value="0" />
+            <config name="AUXPDM1 Output Switch" value="1" />
+            <config name="AUXPDM Switch" value="1" />
+            <config name="VTS DMIC SEL" value="1" />
+            <config name="VTS DMIC IF RCH EN" value="1" />
+            <config name="VTS DMIC IF LCH EN" value="1" />
+            <config name="VTS SYS SEL" value="1" />
+            <config name="VTS HPF EN" value="1" />
+            <config name="VTS HPF SEL" value="1"/>
+        </headset_mic>
+    </mic_configuration>
+</sound_trigger_info>

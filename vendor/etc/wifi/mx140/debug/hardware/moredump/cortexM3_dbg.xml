@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - Debug
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Debug"
+              class="S">
+  <register addr="e00ff000" rw_flags="R" width="4" name="DBG_SCS" comment="System Control Space"/>
+  <register addr="e00ff004" rw_flags="R" width="4" name="DBG_DWT" comment="Data Watchpoint and Trace Unit"/>
+  <register addr="e00ff008" rw_flags="R" width="4" name="DBG_FPB" comment="Flash Patch and Breakpoint Unit"/>
+  <register addr="e00ff00c" rw_flags="R" width="4" name="DBG_ITM" comment="Instrumentation Trace Macrocell"/>
+  <register addr="e00ff010" rw_flags="R" width="4" name="DBG_TPIU" comment="Trace Port Interface Unit"/>
+  <register addr="e00ff014" rw_flags="R" width="4" name="DBG_ETM" comment="Embedded Trace Macrocell"/>
+  <register addr="e00ff018" rw_flags="R" width="4" name="DBG_EndMarker" comment="EndMarker"/>
+  <register addr="e00fffcc" rw_flags="R" width="4" name="DBG_SYSTEM_ACCESS" comment="SYSTEM_ACCESS"/>
+  <block name="Coresight identification Registers">
+    <register addr="e00fffd0" rw_flags="R" width="4" name="DBG_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e00fffd4" rw_flags="R" width="4" name="DBG_PID5" comment="Peripheral Identification Register 5"/>
+    <register addr="e00fffd8" rw_flags="R" width="4" name="DBG_PID6" comment="Peripheral Identification Register 6"/>
+    <register addr="e00fffdc" rw_flags="R" width="4" name="DBG_PID7" comment="Peripheral Identification Register 7"/>
+    <register addr="e00fffe0" rw_flags="R" width="4" name="DBG_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e00fffe4" rw_flags="R" width="4" name="DBG_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e00fffe8" rw_flags="R" width="4" name="DBG_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e00fffec" rw_flags="R" width="4" name="DBG_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e00ffff0" rw_flags="R" width="4" name="DBG_CID0" comment="Component Identification Register 0"/>
+    <register addr="e00ffff4" rw_flags="R" width="4" name="DBG_CID1" comment="Component Identification Register 1"/>
+    <register addr="e00ffff8" rw_flags="R" width="4" name="DBG_CID2" comment="Component Identification Register 2"/>
+    <register addr="e00ffffc" rw_flags="R" width="4" name="DBG_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

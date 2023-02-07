@@ -1,0 +1,23 @@
+{
+	"requesters" : [
+		{
+			"name" : "change@/devices/platform/ems",
+			"requests" : [
+				{
+					"name" : "SYSBUSY",
+					"handle" : "sysbusy",
+					"paths" : [
+						"/sys/class/devfreq/17000010.devfreq_mif/interactive/current_mode"
+					]
+				},
+				{
+					"name" : "NOTI_MODE",
+					"handle" : "mode",
+					"paths" :[
+						"/sys/kernel/ems/emstune/req_mode"
+					]
+				}
+			]
+		}
+	]
+}

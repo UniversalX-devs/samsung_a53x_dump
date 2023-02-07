@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<records>
+<boot_file>/system/framework/services.jar</boot_file>
+<boot_file>/system/framework/oat/arm64/services.odex</boot_file>
+<boot_file>/vendor/lib/egl/libGLES_mali.so</boot_file>
+<boot_file>/vendor/lib64/egl/libGLES_mali.so</boot_file>
+<boot_file>/system/framework/framework.jar</boot_file>
+<boot_file>/system/priv-app/TouchWizHome_2017/TouchWizHome_2017.apk</boot_file>
+<boot_file>/system/framework/arm64/boot-framework.oat</boot_file>
+<boot_file>/system/framework/arm/boot-framework.oat</boot_file>
+<boot_file>/system/lib64/libhwui.so</boot_file>
+<boot_file>/system/lib/libhwui.so</boot_file>
+<boot_file>/system/framework/wifi-service.jar</boot_file>
+<boot_file>/system/lib64/vndk-sp-29/libhardware.so</boot_file>
+<boot_file>/system/lib64/vndk-sp-29/android.hardware.graphics.mapper@2.1.so</boot_file>
+<boot_file>/apex/com.android.art/lib/libart.so</boot_file>
+<boot_file>/system/bin/surfaceflinger</boot_file>
+</records>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - System Control Space
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Trace Port Interface Unit"
+              class="S">
+  <register addr="e0040000" rw_flags="R" width="4" name="TPI_SSPSR" comment=" Supported Parallel Port Size Register"/>
+  <register addr="e0040004" rw_flags="RW" width="4" name="TPI_CSPSR" comment="Current Parallel Port Size Register"/>
+  <register addr="e0040010" rw_flags="RW" width="4" name="TPI_ACPR" comment="Asynchronous Clock Prescaler Register"/>
+  <register addr="e00400f0" rw_flags="RW" width="4" name="TPI_SPPR" comment="Selected Pin Protocol Register"/>
+  <register addr="e0040300" rw_flags="R" width="4" name="TPI_FFSR" comment=" Formatter and Flush Status Register"/>
+  <register addr="e0040304" rw_flags="RW" width="4" name="TPI_FFCR" comment="Formatter and Flush Control Register"/>
+  <register addr="e0040308" rw_flags="R" width="4" name="TPI_FSCR" comment=" Formatter Synchronization Counter Register"/>
+  <register addr="e0040ee8" rw_flags="R" width="4" name="TPI_TRIGGER"/>
+  <register addr="e0040eec" rw_flags="R" width="4" name="TPI_FIFO_DATA_0"/>
+  <register addr="e0040ef0" rw_flags="R" width="4" name="TPI_ITATBCTR2"/>
+  <register addr="e0040efc" rw_flags="R" width="4" name="TPI_FIFO_DATA_1"/>
+  <register addr="e0040ef8" rw_flags="R" width="4" name="TPI_ITATBCTR0"/>
+  <register addr="e0040f00" rw_flags="RW" width="4" name="TPI_ITCTRL" comment="Integration Mode Control Register"/>
+  <register addr="e0040fa0" rw_flags="RW" width="4" name="TPI_CLAIMSET" comment="Claim Tag Set Register"/>
+  <register addr="e0040fa4" rw_flags="RW" width="4" name="TPI_CLAIMCLR" comment="Claim Tag Clear Register"/>
+  <register addr="e0040fc8" rw_flags="R" width="4" name="TPI_DEVID"/>
+  <register addr="e0040fcc" rw_flags="R" width="4" name="TPI_DEVTYPE"/>
+  <block name="Coresight identification Registers">
+    <register addr="e0040fd0" rw_flags="R" width="4" name="TPI_PID4" comment="Peripheral Identification Register 4"/>
+    <register addr="e0040fd4" rw_flags="R" width="4" name="TPI_PID5" comment="Peripheral Identification Register 5"/>
+    <register addr="e0040fd8" rw_flags="R" width="4" name="TPI_PID6" comment="Peripheral Identification Register 6"/>
+    <register addr="e0040fdc" rw_flags="R" width="4" name="TPI_PID7" comment="Peripheral Identification Register 7"/>
+    <register addr="e0040fe0" rw_flags="R" width="4" name="TPI_PID0" comment="Peripheral Identification Register 0"/>
+    <register addr="e0040fe4" rw_flags="R" width="4" name="TPI_PID1" comment="Peripheral Identification Register 1"/>
+    <register addr="e0040fe8" rw_flags="R" width="4" name="TPI_PID2" comment="Peripheral Identification Register 2"/>
+    <register addr="e0040fec" rw_flags="R" width="4" name="TPI_PID3" comment="Peripheral Identification Register 3"/>
+    <register addr="e0040ff0" rw_flags="R" width="4" name="TPI_CID0" comment="Component Identification Register 0"/>
+    <register addr="e0040ff4" rw_flags="R" width="4" name="TPI_CID1" comment="Component Identification Register 1"/>
+    <register addr="e0040ff8" rw_flags="R" width="4" name="TPI_CID2" comment="Component Identification Register 2"/>
+    <register addr="e0040ffc" rw_flags="R" width="4" name="TPI_CID3" comment="Component Identification Register 3"/>
+  </block>
+</memorymapped>

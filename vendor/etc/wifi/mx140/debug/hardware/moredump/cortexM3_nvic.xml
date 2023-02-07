@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor - Nested Vectored Interrupt Controller
+-->
+
+<memorymapped xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+              name="Nested Vectored Interrupt Controller"
+              class="S">
+  <register addr="e000e004" rw_flags="R" width="4" name="ICTR" comment="Interrupt Controller Type Register"/>
+  <block name="Interrupt Set Enable Registers">
+    <register addr="e000e100" rw_flags="RW" width="4" name="NVIC_ISER0" comment="Interrupt Set Enable Register 0"/>
+    <register addr="e000e104" rw_flags="RW" width="4" name="NVIC_ISER1" comment="Interrupt Set Enable Register 1"/>
+    <register addr="e000e108" rw_flags="RW" width="4" name="NVIC_ISER2" comment="Interrupt Set Enable Register 2"/>
+    <register addr="e000e10c" rw_flags="RW" width="4" name="NVIC_ISER3" comment="Interrupt Set Enable Register 3"/>
+    <register addr="e000e110" rw_flags="RW" width="4" name="NVIC_ISER4" comment="Interrupt Set Enable Register 4"/>
+    <register addr="e000e114" rw_flags="RW" width="4" name="NVIC_ISER5" comment="Interrupt Set Enable Register 5"/>
+    <register addr="e000e118" rw_flags="RW" width="4" name="NVIC_ISER6" comment="Interrupt Set Enable Register 6"/>
+    <register addr="e000e11c" rw_flags="RW" width="4" name="NVIC_ISER7" comment="Interrupt Set Enable Register 7"/>
+  </block>
+  <block name="Interrupt Clear Enable Registers">
+    <register addr="e000e180" rw_flags="RW" width="4" name="NVIC_ICER0" comment="Interrupt Clear Enable Register 0"/>
+    <register addr="e000e184" rw_flags="RW" width="4" name="NVIC_ICER1" comment="Interrupt Clear Enable Register 1"/>
+    <register addr="e000e188" rw_flags="RW" width="4" name="NVIC_ICER2" comment="Interrupt Clear Enable Register 2"/>
+    <register addr="e000e18c" rw_flags="RW" width="4" name="NVIC_ICER3" comment="Interrupt Clear Enable Register 3"/>
+    <register addr="e000e190" rw_flags="RW" width="4" name="NVIC_ICER4" comment="Interrupt Clear Enable Register 4"/>
+    <register addr="e000e194" rw_flags="RW" width="4" name="NVIC_ICER5" comment="Interrupt Clear Enable Register 5"/>
+    <register addr="e000e198" rw_flags="RW" width="4" name="NVIC_ICER6" comment="Interrupt Clear Enable Register 6"/>
+    <register addr="e000e19c" rw_flags="RW" width="4" name="NVIC_ICER7" comment="Interrupt Clear Enable Register 7"/>
+  </block>
+  <block name="Interrupt Set Pending Registers">
+    <register addr="e000e200" rw_flags="RW" width="4" name="NVIC_ISPR0" comment="Interrupt Set Pending Register 0"/>
+    <register addr="e000e204" rw_flags="RW" width="4" name="NVIC_ISPR1" comment="Interrupt Set Pending Register 1"/>
+    <register addr="e000e208" rw_flags="RW" width="4" name="NVIC_ISPR2" comment="Interrupt Set Pending Register 2"/>
+    <register addr="e000e20c" rw_flags="RW" width="4" name="NVIC_ISPR3" comment="Interrupt Set Pending Register 3"/>
+    <register addr="e000e210" rw_flags="RW" width="4" name="NVIC_ISPR4" comment="Interrupt Set Pending Register 4"/>
+    <register addr="e000e214" rw_flags="RW" width="4" name="NVIC_ISPR5" comment="Interrupt Set Pending Register 5"/>
+    <register addr="e000e218" rw_flags="RW" width="4" name="NVIC_ISPR6" comment="Interrupt Set Pending Register 6"/>
+    <register addr="e000e21c" rw_flags="RW" width="4" name="NVIC_ISPR7" comment="Interrupt Set Pending Register 7"/>
+  </block>
+  <block name="Interrupt Clear Pending Registers">
+    <register addr="e000e280" rw_flags="RW" width="4" name="NVIC_ICPR0" comment="Interrupt Clear Pending Register 0"/>
+    <register addr="e000e284" rw_flags="RW" width="4" name="NVIC_ICPR1" comment="Interrupt Clear Pending Register 1"/>
+    <register addr="e000e288" rw_flags="RW" width="4" name="NVIC_ICPR2" comment="Interrupt Clear Pending Register 2"/>
+    <register addr="e000e28c" rw_flags="RW" width="4" name="NVIC_ICPR3" comment="Interrupt Clear Pending Register 3"/>
+    <register addr="e000e290" rw_flags="RW" width="4" name="NVIC_ICPR4" comment="Interrupt Clear Pending Register 4"/>
+    <register addr="e000e294" rw_flags="RW" width="4" name="NVIC_ICPR5" comment="Interrupt Clear Pending Register 5"/>
+    <register addr="e000e298" rw_flags="RW" width="4" name="NVIC_ICPR6" comment="Interrupt Clear Pending Register 6"/>
+    <register addr="e000e29c" rw_flags="RW" width="4" name="NVIC_ICPR7" comment="Interrupt Clear Pending Register 7"/>
+  </block>
+  <block name="Interrupt Active Bit Registers">
+    <register addr="e000e300" rw_flags="R" width="4" name="NVIC_IABR0" comment="Interrupt Active Bit Register 0"/>
+    <register addr="e000e304" rw_flags="R" width="4" name="NVIC_IABR1" comment="Interrupt Active Bit Register 1"/>
+    <register addr="e000e308" rw_flags="R" width="4" name="NVIC_IABR2" comment="Interrupt Active Bit Register 2"/>
+    <register addr="e000e30c" rw_flags="R" width="4" name="NVIC_IABR3" comment="Interrupt Active Bit Register 3"/>
+    <register addr="e000e310" rw_flags="R" width="4" name="NVIC_IABR4" comment="Interrupt Active Bit Register 4"/>
+    <register addr="e000e314" rw_flags="R" width="4" name="NVIC_IABR5" comment="Interrupt Active Bit Register 5"/>
+    <register addr="e000e318" rw_flags="R" width="4" name="NVIC_IABR6" comment="Interrupt Active Bit Register 6"/>
+    <register addr="e000e31c" rw_flags="R" width="4" name="NVIC_IABR7" comment="Interrupt Active Bit Register 7"/>
+  </block>
+  <block name="Interrupt Priority Registers">
+    <register addr="e000e400" rw_flags="RW" width="4" name="NVIC_IPR0" comment="Interrupt Priority Register 0"/>
+    <register addr="e000e404" rw_flags="RW" width="4" name="NVIC_IPR1" comment="Interrupt Priority Register 1"/>
+    <register addr="e000e408" rw_flags="RW" width="4" name="NVIC_IPR2" comment="Interrupt Priority Register 2"/>
+    <register addr="e000e40c" rw_flags="RW" width="4" name="NVIC_IPR3" comment="Interrupt Priority Register 3"/>
+    <register addr="e000e410" rw_flags="RW" width="4" name="NVIC_IPR4" comment="Interrupt Priority Register 4"/>
+    <register addr="e000e414" rw_flags="RW" width="4" name="NVIC_IPR5" comment="Interrupt Priority Register 5"/>
+    <register addr="e000e418" rw_flags="RW" width="4" name="NVIC_IPR6" comment="Interrupt Priority Register 6"/>
+    <register addr="e000e41c" rw_flags="RW" width="4" name="NVIC_IPR7" comment="Interrupt Priority Register 7"/>
+    <register addr="e000e420" rw_flags="RW" width="4" name="NVIC_IPR8" comment="Interrupt Priority Register 8"/>
+    <register addr="e000e424" rw_flags="RW" width="4" name="NVIC_IPR9" comment="Interrupt Priority Register 9"/>
+    <register addr="e000e428" rw_flags="RW" width="4" name="NVIC_IPR10" comment="Interrupt Priority Register 10"/>
+    <register addr="e000e42c" rw_flags="RW" width="4" name="NVIC_IPR11" comment="Interrupt Priority Register 11"/>
+    <register addr="e000e430" rw_flags="RW" width="4" name="NVIC_IPR12" comment="Interrupt Priority Register 12"/>
+    <register addr="e000e434" rw_flags="RW" width="4" name="NVIC_IPR13" comment="Interrupt Priority Register 13"/>
+    <register addr="e000e438" rw_flags="RW" width="4" name="NVIC_IPR14" comment="Interrupt Priority Register 14"/>
+    <register addr="e000e43c" rw_flags="RW" width="4" name="NVIC_IPR15" comment="Interrupt Priority Register 15"/>
+    <register addr="e000e440" rw_flags="RW" width="4" name="NVIC_IPR16" comment="Interrupt Priority Register 16"/>
+    <register addr="e000e444" rw_flags="RW" width="4" name="NVIC_IPR17" comment="Interrupt Priority Register 17"/>
+    <register addr="e000e448" rw_flags="RW" width="4" name="NVIC_IPR18" comment="Interrupt Priority Register 18"/>
+    <register addr="e000e44c" rw_flags="RW" width="4" name="NVIC_IPR19" comment="Interrupt Priority Register 19"/>
+    <register addr="e000e450" rw_flags="RW" width="4" name="NVIC_IPR20" comment="Interrupt Priority Register 20"/>
+    <register addr="e000e454" rw_flags="RW" width="4" name="NVIC_IPR21" comment="Interrupt Priority Register 21"/>
+    <register addr="e000e458" rw_flags="RW" width="4" name="NVIC_IPR22" comment="Interrupt Priority Register 22"/>
+    <register addr="e000e45c" rw_flags="RW" width="4" name="NVIC_IPR23" comment="Interrupt Priority Register 23"/>
+    <register addr="e000e460" rw_flags="RW" width="4" name="NVIC_IPR24" comment="Interrupt Priority Register 24"/>
+    <register addr="e000e464" rw_flags="RW" width="4" name="NVIC_IPR25" comment="Interrupt Priority Register 25"/>
+    <register addr="e000e468" rw_flags="RW" width="4" name="NVIC_IPR26" comment="Interrupt Priority Register 26"/>
+    <register addr="e000e46c" rw_flags="RW" width="4" name="NVIC_IPR27" comment="Interrupt Priority Register 27"/>
+    <register addr="e000e470" rw_flags="RW" width="4" name="NVIC_IPR28" comment="Interrupt Priority Register 28"/>
+    <register addr="e000e474" rw_flags="RW" width="4" name="NVIC_IPR29" comment="Interrupt Priority Register 29"/>
+    <register addr="e000e478" rw_flags="RW" width="4" name="NVIC_IPR30" comment="Interrupt Priority Register 30"/>
+    <register addr="e000e47c" rw_flags="RW" width="4" name="NVIC_IPR31" comment="Interrupt Priority Register 31"/>
+    <register addr="e000e480" rw_flags="RW" width="4" name="NVIC_IPR32" comment="Interrupt Priority Register 32"/>
+    <register addr="e000e484" rw_flags="RW" width="4" name="NVIC_IPR33" comment="Interrupt Priority Register 33"/>
+    <register addr="e000e488" rw_flags="RW" width="4" name="NVIC_IPR34" comment="Interrupt Priority Register 34"/>
+    <register addr="e000e48c" rw_flags="RW" width="4" name="NVIC_IPR35" comment="Interrupt Priority Register 35"/>
+    <register addr="e000e490" rw_flags="RW" width="4" name="NVIC_IPR36" comment="Interrupt Priority Register 36"/>
+    <register addr="e000e494" rw_flags="RW" width="4" name="NVIC_IPR37" comment="Interrupt Priority Register 37"/>
+    <register addr="e000e498" rw_flags="RW" width="4" name="NVIC_IPR38" comment="Interrupt Priority Register 38"/>
+    <register addr="e000e49c" rw_flags="RW" width="4" name="NVIC_IPR39" comment="Interrupt Priority Register 39"/>
+    <register addr="e000e4a0" rw_flags="RW" width="4" name="NVIC_IPR40" comment="Interrupt Priority Register 40"/>
+    <register addr="e000e4a4" rw_flags="RW" width="4" name="NVIC_IPR41" comment="Interrupt Priority Register 41"/>
+    <register addr="e000e4a8" rw_flags="RW" width="4" name="NVIC_IPR42" comment="Interrupt Priority Register 42"/>
+    <register addr="e000e4ac" rw_flags="RW" width="4" name="NVIC_IPR43" comment="Interrupt Priority Register 43"/>
+    <register addr="e000e4b0" rw_flags="RW" width="4" name="NVIC_IPR44" comment="Interrupt Priority Register 44"/>
+    <register addr="e000e4b4" rw_flags="RW" width="4" name="NVIC_IPR45" comment="Interrupt Priority Register 45"/>
+    <register addr="e000e4b8" rw_flags="RW" width="4" name="NVIC_IPR46" comment="Interrupt Priority Register 46"/>
+    <register addr="e000e4bc" rw_flags="RW" width="4" name="NVIC_IPR47" comment="Interrupt Priority Register 47"/>
+    <register addr="e000e4c0" rw_flags="RW" width="4" name="NVIC_IPR48" comment="Interrupt Priority Register 48"/>
+    <register addr="e000e4c4" rw_flags="RW" width="4" name="NVIC_IPR49" comment="Interrupt Priority Register 49"/>
+    <register addr="e000e4c8" rw_flags="RW" width="4" name="NVIC_IPR50" comment="Interrupt Priority Register 50"/>
+    <register addr="e000e4cc" rw_flags="RW" width="4" name="NVIC_IPR51" comment="Interrupt Priority Register 51"/>
+    <register addr="e000e4d0" rw_flags="RW" width="4" name="NVIC_IPR52" comment="Interrupt Priority Register 52"/>
+    <register addr="e000e4d4" rw_flags="RW" width="4" name="NVIC_IPR53" comment="Interrupt Priority Register 53"/>
+    <register addr="e000e4d8" rw_flags="RW" width="4" name="NVIC_IPR54" comment="Interrupt Priority Register 54"/>
+    <register addr="e000e4dc" rw_flags="RW" width="4" name="NVIC_IPR55" comment="Interrupt Priority Register 55"/>
+    <register addr="e000e4e0" rw_flags="RW" width="4" name="NVIC_IPR56" comment="Interrupt Priority Register 56"/>
+    <register addr="e000e4e4" rw_flags="RW" width="4" name="NVIC_IPR57" comment="Interrupt Priority Register 57"/>
+    <register addr="e000e4e8" rw_flags="RW" width="4" name="NVIC_IPR58" comment="Interrupt Priority Register 58"/>
+    <register addr="e000e4ec" rw_flags="RW" width="4" name="NVIC_IPR59" comment="Interrupt Priority Register 59"/>
+  </block>
+</memorymapped>

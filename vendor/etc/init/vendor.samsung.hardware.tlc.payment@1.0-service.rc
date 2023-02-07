@@ -1,0 +1,9 @@
+service tlc_payment_serv /vendor/bin/hw/vendor.samsung.hardware.tlc.payment@1.0-service
+    interface vendor.samsung.hardware.tlc.payment@1.0::ISehTlcPayment default
+    class hal
+    user system
+    group system
+    disabled
+
+on property:init.svc.zygote=restarting
+    stop tlc_payment_serv

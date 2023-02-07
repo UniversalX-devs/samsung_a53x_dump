@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+(c) SCSC 2018, moredump definitions for Cortex M3 processor
+-->
+
+<processor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.samsung.com ../Processor.xsd"
+           name="Cortex M3"
+           comment="Cortex M3 Processor/co-processors">
+  <cpuregister name="R0"/>
+  <cpuregister name="R1"/>
+  <cpuregister name="R2"/>
+  <cpuregister name="R3"/>
+  <cpuregister name="R4"/>
+  <cpuregister name="R5"/>
+  <cpuregister name="R6"/>
+  <cpuregister name="R7"/>
+  <cpuregister name="R8"/>
+  <cpuregister name="R9"/>
+  <cpuregister name="R10"/>
+  <cpuregister name="R11"/>
+  <cpuregister name="R12"/>
+  <cpuregister name="R13" aka="SP"/>
+  <cpuregister name="R14" aka="LR"/>
+  <cpuregister name="R15" aka="PC"/>
+  <cpuregister name="XPSR"/>
+  <cpuregister name="MSP"/>
+  <cpuregister name="PSP"/>
+  <cpuregister name="CONTROL" width="1"/>
+  <cpuregister name="FAULTMASK" width="1"/>
+  <cpuregister name="BASEPRI" width="1"/>
+  <cpuregister name="PRIMASK" width="1"/>
+
+  <memorymapped name="System Control" class="S">
+    <register addr="e000e008" rw_flags="RW" width="4" name="ACTLR" comment="Auxiliary Control Register"/>
+    <register addr="e000e010" rw_flags="RW" width="4" name="STCSR" comment="SysTick Control and Status Register"/>
+    <register addr="e000e014" rw_flags="RW" width="4" name="STRVR" comment="SysTick Reload Value Register"/>
+    <register addr="e000e018" rw_flags="RW" width="4" name="STCVR" comment="SysTick Current Value Register"/>
+    <register addr="e000e01c" rw_flags="R" width="4" name="STCR" comment="SysTick Calibration Value Register"/>
+    <register addr="e000ed00" rw_flags="R" width="4" name="CPUID" comment="CPU ID Base Register"/>
+    <register addr="e000ed04" rw_flags="RW" width="4" name="ICSR" comment="Interrupt Control State Register"/>
+    <register addr="e000ed08" rw_flags="RW" width="4" name="VTOR" comment="Vector Table Offset Register"/>
+    <register addr="e000ed0c" rw_flags="RW" width="4" name="AIRCR" comment="Application Interrupt and Reset Control Register"/>
+    <register addr="e000ed10" rw_flags="RW" width="4" name="SCR" comment="System Control Register"/>
+    <register addr="e000ed14" rw_flags="RW" width="4" name="CCR" comment="Configuration Control Register"/>
+    <register addr="e000ed18" rw_flags="RW" width="4" name="SHPR1" comment="System Handler Priority Register 1"/>
+    <register addr="e000ed1c" rw_flags="RW" width="4" name="SHPR2" comment="System Handler Priority Register 2"/>
+    <register addr="e000ed20" rw_flags="RW" width="4" name="SHPR3" comment="System Handler Priority Register 3"/>
+    <register addr="e000ed24" rw_flags="RW" width="4" name="SHCSR" comment="System Handler Control and State Register"/>
+    <register addr="e000ed28" rw_flags="RW" width="4" name="CFSR" comment="Configurable Fault Status Register"/>
+    <register addr="e000ed2c" rw_flags="RW" width="4" name="HFSR" comment="Hard Fault Status Register"/>
+    <register addr="e000ed30" rw_flags="RW" width="4" name="DFSR" comment="Debug Fault Status Register"/>
+    <register addr="e000ed34" rw_flags="RW" width="4" name="MMFAR" comment="MemManage Fault Address Register"/>
+    <register addr="e000ed38" rw_flags="RW" width="4" name="BFAR" comment="BusFault Address Register"/>
+    <register addr="e000ed3c" rw_flags="RW" width="4" name="AFSR" comment="Auxiliary Fault Status Register"/>
+    <block name="Feature Registers">
+      <register addr="e000ed40" rw_flags="R" width="4" name="ID_PFR0" comment="Processor Feature Register 0"/>
+      <register addr="e000ed44" rw_flags="R" width="4" name="ID_PFR1" comment="Processor Feature Register 1"/>
+      <register addr="e000ed48" rw_flags="R" width="4" name="ID_DFR0" comment="Debug Feature Register 0"/>
+      <register addr="e000ed4c" rw_flags="R" width="4" name="ID_AFR0" comment="Auxiliary Feature Register 0"/>
+      <register addr="e000ed50" rw_flags="R" width="4" name="ID_MMFR0" comment="Memory Model Feature Register 0"/>
+      <register addr="e000ed54" rw_flags="R" width="4" name="ID_MMFR1" comment="Memory Model Feature Register 1"/>
+      <register addr="e000ed58" rw_flags="R" width="4" name="ID_MMFR2" comment="Memory Model Feature Register 2"/>
+      <register addr="e000ed5c" rw_flags="R" width="4" name="ID_MMFR3" comment="Memory Model Feature Register 3"/>
+      <register addr="e000ed60" rw_flags="R" width="4" name="ID_ISAR0" comment="Instruction Set Attribute Feature Register 0"/>
+      <register addr="e000ed64" rw_flags="R" width="4" name="ID_ISAR1" comment="Instruction Set Attribute Feature Register 1"/>
+      <register addr="e000ed68" rw_flags="R" width="4" name="ID_ISAR2" comment="Instruction Set Attribute Feature Register 2"/>
+      <register addr="e000ed6c" rw_flags="R" width="4" name="ID_ISAR3" comment="Instruction Set Attribute Feature Register 3"/>
+      <register addr="e000ed70" rw_flags="R" width="4" name="ID_ISAR4" comment="Instruction Set Attribute Feature Register 4"/>
+    </block>
+    <register addr="e000ed88" rw_flags="RW" width="4" name="CPACR" comment="Coprocessor Access Control Register"/>
+    <register addr="e000ef00" rw_flags="W" width="4" name="STIR" comment="Software Triggered Interrupt Register"/>
+  </memorymapped>
+</processor>

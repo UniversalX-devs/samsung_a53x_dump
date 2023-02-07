@@ -1,0 +1,4 @@
+service epic_service /vendor/bin/hw/vendor.samsung_slsi.hardware.epic@1.0-service
+    class hal
+    user system
+    group system

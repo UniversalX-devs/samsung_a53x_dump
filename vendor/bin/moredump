@@ -1,0 +1,60 @@
+#!/vendor/bin/sh
+# Invoke the moredump.bin tool building appropriate filename.
+#
+# The output is redirected to /dev/null because when called
+# from the call_usermode_helper() kernel API on Android
+# garbage gets written into the output file.
+#
+# Unless -f option is used, usage is not permitted explicitly
+# from a shell.
+#
+base_dir=`cat /sys/module/scsc_mx/parameters/base_dir`
+fw_var=`cat /sys/module/scsc_mx/parameters/firmware_variant`
+fw_suffix=`cat /sys/module/scsc_mx/parameters/firmware_hw_ver`
+build_type="`getprop ro.build.type`"
+
+[ $# -gt 0 -a "x$1" = "x-f" ] && force=Y || force=N
+# Take care to avoid being run directly from shell, since it is
+# source of corrupted moredumps and a lot of troubles.
+# 'tty -s' availability has been verified on customer builds too.
+[ "x$force" = "xN" ] && tty -s && echo "This application is NOT supposed to be run from a shell.\nUse instead: trigger_moredump <filename>" && exit 1
+
+if [ "$fw_suffix" = "manual" ];
+then
+        fw_suffix=""
+fi
+
+xml_dir=$base_dir/$fw_var$fw_suffix/debug/hardware/moredump
+log_strings=$base_dir/$fw_var$fw_suffix/debug/common/log-strings.bin
+[ "x${build_type}" == "xuser" ] && moredump_dir=/data/vendor/log/wifi || moredump_dir=/data/vendor/log/wifi/
+
+if [ ! -d $moredump_dir ]
+then
+       mkdir -p $moredump_dir
+fi
+sync
+
+if [ "x${build_type}" == "xuser" ]
+then
+	out_name=$moredump_dir/moredump_last
+	rm -f "$out_name.cmm" >/dev/null 2>&1
+	sync
+else
+	out_name=$moredump_dir/moredump_`date +%Y_%m_%d__%H_%M_%S`
+fi
+
+## Dump LogRing, Logcat, Kernel
+## We force mxlog collection (-f), regardless of mxman state (as this is the first panic)
+mx_logger_dump.sh -d $moredump_dir -f || true
+
+## Trigger Moredump itself
+moredump.bin $out_name.cmm -xml_path $xml_dir -log_strings $log_strings 2>/dev/null >/dev/null
+
+exit_code=$?
+
+sync
+
+chmod 775 $out_name.cmm
+
+exit $exit_code
+

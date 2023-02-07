@@ -1,0 +1,4 @@
+service vendor.power-default /vendor/bin/hw/android.hardware.power-service.s5e8825
+    class hal
+    user nobody
+    group system
